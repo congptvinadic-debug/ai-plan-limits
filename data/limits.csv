@@ -1,0 +1,355 @@
+tool_id,tool,vendor,plan_id,plan,price_usd_month,annual_usd_month,per_seat,unit,metric,value,window,numeric,published,source_url,checked
+claude,Claude,Anthropic,free,Free,0,,no,usage allowance,Session usage,Free covers everyday questions; limit resets on a rolling five-hour window,5h,,no,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,free,Free,0,,no,usage allowance,Claude Code,Not included,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,free,Free,0,,no,usage allowance,Projects,Up to 5,,5,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,free,Free,0,,no,usage allowance,Context window,"Up to 1M, varies by model",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,free,Free,0,,no,usage allowance,Fable,Not available,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,pro,Pro,20,17,no,usage allowance,Session usage,More usage than Free every 5 hours; no multiple stated,5h,,no,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,pro,Pro,20,17,no,usage allowance,Weekly usage,"Weekly limit across all models, resets at a fixed time assigned to the account",7d,,no,https://support.claude.com/en/articles/8325606-what-is-the-pro-plan,2026-10-30
+claude,Claude,Anthropic,pro,Pro,20,17,no,usage allowance,Fable,Usage credits,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,pro,Pro,20,17,no,usage allowance,Claude Code,"Included, shares the same limits",,,yes,https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan,2026-10-30
+claude,Claude,Anthropic,pro,Pro,20,17,no,usage allowance,Usage credits,Optional usage credits billed at standard API rates,,,yes,https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans,2026-10-30
+claude,Claude,Anthropic,pro,Pro,20,17,no,usage allowance,API credits,Not included,,,yes,https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans,2026-10-30
+claude,Claude,Anthropic,pro,Pro,20,17,no,usage allowance,Context window,"Up to 1M, varies by model",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,Session usage,5x the Pro plan's usage every five hours,5h,5,yes,https://support.claude.com/en/articles/11049741-what-is-the-max-plan,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,Weekly usage,5x the Pro plan's usage every week; separate weekly limit for Fable,7d,5,yes,https://support.claude.com/en/articles/11049741-what-is-the-max-plan,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,Fable,50% of weekly limits,7d,50,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,Output limits,Higher output limits for all tasks,,,no,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,API credits,$100/month in Claude API credits (Claude Platform only; not usable in Claude Code or the Claude apps),month,100,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,Claude Code,"Included, shares the same limits",,,yes,https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,Usage credits,Optional usage credits billed at standard API rates,,,yes,https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans,2026-10-30
+claude,Claude,Anthropic,max-5x,Max,100,,no,usage allowance,Context window,"Up to 1M, varies by model",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,Session usage,No five-hour limit for verified accounts (verified automatically from account and payment history; a temporary limit applies until then),5h,,yes,https://support.claude.com/en/articles/17728952,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,Weekly usage,10x the Pro plan's usage every week; separate weekly limit for Fable,7d,10,yes,https://support.claude.com/en/articles/17728952,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,Fable,50% of weekly limits,7d,50,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,Output limits,Higher output limits for all tasks,,,no,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,API credits,$200/month in Claude API credits (Claude Platform only; not usable in Claude Code or the Claude apps),month,200,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,Claude Code,"Included, shares the same limits",,,yes,https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,Usage credits,Optional usage credits billed at standard API rates,,,yes,https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans,2026-10-30
+claude,Claude,Anthropic,max-20x,Ultra,200,,no,usage allowance,Context window,"Up to 1M, varies by model",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,Session usage,1.25x the Pro per-session allowance,5h,1.25,yes,https://support.claude.com/en/articles/9266767-what-is-the-team-plan,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,Weekly usage,"Weekly limit across all models, per member, resets at a fixed time assigned to the account",7d,,no,https://support.claude.com/en/articles/9266767-what-is-the-team-plan,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,Seats,2 to 150 seats,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,API credits (team pool cap),Up to $500/month pooled across the team,month,500,yes,https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,API credits per seat,"$20 per standard seat, added to the team pool",month,20,yes,https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,Claude Code,"Included, shares the same limits",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,Usage credits,Available,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-standard,Team (standard seat),25,20,yes,usage allowance,Context window,"Up to 1M, varies by model (Team help article says 200k)",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,Session usage,6.25x the Pro per-session allowance (5x more than a standard seat),5h,6.25,yes,https://support.claude.com/en/articles/9266767-what-is-the-team-plan,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,Weekly usage,"Weekly limit across all models, per member, resets at a fixed time assigned to the account",7d,,no,https://support.claude.com/en/articles/9266767-what-is-the-team-plan,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,Fable,50% of weekly limits on premium seats,7d,50,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,Seats,2 to 150 seats,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,API credits (team pool cap),Up to $500/month pooled across the team,month,500,yes,https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,API credits per seat,"$100 per premium seat, added to the team pool",month,100,yes,https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,Claude Code,"Included, shares the same limits",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,Usage credits,Available,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,team-premium,Team (premium seat),125,100,yes,usage allowance,Context window,"Up to 1M, varies by model (Team help article says 200k)",,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,enterprise,Enterprise,,20,yes,seat + API usage,Usage,No included usage; all tokens billed at standard API rates,,,yes,https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan,2026-10-30
+claude,Claude,Anthropic,enterprise,Enterprise,,20,yes,seat + API usage,Seat minimum,20 seats,,20,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,enterprise,Enterprise,,20,yes,seat + API usage,Claude Code,Included (usage billed at API rates),,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,enterprise,Enterprise,,20,yes,seat + API usage,API credits,Not included,,,yes,https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans,2026-10-30
+claude,Claude,Anthropic,enterprise,Enterprise,,20,yes,seat + API usage,Fable,Available,,,yes,https://claude.com/pricing,2026-10-30
+claude,Claude,Anthropic,enterprise,Enterprise,,20,yes,seat + API usage,Context window,"Up to 1M, varies by model",,,yes,https://claude.com/pricing,2026-10-30
+chatgpt,ChatGPT + Codex,OpenAI,free,Free,0,,no,messages per 5 hours,Codex,"GPT-6 Luna at Standard speed in the desktop app, subject to rollout; no message figures published",5h,,no,https://learn.chatgpt.com/docs/pricing,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,free,Free,0,,no,messages per 5 hours,Codex (ChatGPT pricing page),Limited,,,no,https://chatgpt.com/pricing,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,free,Free,0,,no,messages per 5 hours,Image generation in Codex,Not available,,,yes,https://learn.chatgpt.com/docs/pricing,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,free,Free,0,,no,messages per 5 hours,Codex Cloud,Not included,,,yes,https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,go,Go,8,,no,messages per 5 hours,Codex,"GPT-6 Luna at Standard speed in the desktop app, subject to rollout; no message figures published",5h,,no,https://learn.chatgpt.com/docs/pricing,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,go,Go,8,,no,messages per 5 hours,Codex (ChatGPT pricing page),Limited,,,no,https://chatgpt.com/pricing,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,go,Go,8,,no,messages per 5 hours,Codex Cloud,Not included,,,yes,https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,"Codex local messages, GPT-6 Astra",5 to 45 per 5 hours,5h,45,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,"Codex local messages, GPT-6.1 Sol",15 to 160 per 5 hours,5h,160,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,"Codex local messages, GPT-6.1 Terra",35 to 285 per 5 hours,5h,285,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,"Codex local messages, GPT-6 Sol",15 to 150 per 5 hours,5h,150,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,"Codex local messages, GPT-6 Luna","350 to 3,000 per 5 hours",5h,3000,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,Weekly usage,Weekly limits may also apply,7d,,no,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,Codex Cloud,"Codex on the web plus cloud-based integrations (automatic code review, Slack)",,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,Extra usage,Can purchase additional credits after reaching usage limit,,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,"Credit rate, GPT-6.1 Sol","50 credits per 1M input tokens, 2.5 per 1M cached input, 250 per 1M output",,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,plus,Plus,20,,no,messages per 5 hours,Shared allowance from December 2026,"Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",,,yes,https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-100,Pro ($100),100,,no,usage allowance,Codex 5-hour limit,None (vendor: Pro plans currently have no five-hour limit),5h,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-100,Pro ($100),100,,no,usage allowance,Weekly usage,Weekly limits may also apply,7d,,no,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-100,Pro ($100),100,,no,usage allowance,Codex Cloud,"Included (Pro includes everything in Plus, incl. Codex on the web and cloud-based integrations)",,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-100,Pro ($100),100,,no,usage allowance,Extra usage,Can purchase additional credits after reaching usage limit,,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-100,Pro ($100),100,,no,usage allowance,Shared allowance from December 2026,"Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",,,yes,https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-200,Pro ($200),200,,no,usage allowance,Codex 5-hour limit,None (vendor: Pro plans currently have no five-hour limit),5h,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-200,Pro ($200),200,,no,usage allowance,Weekly usage,Weekly limits may also apply,7d,,no,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-200,Pro ($200),200,,no,usage allowance,Codex Cloud,"Included (Pro includes everything in Plus, incl. Codex on the web and cloud-based integrations)",,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-200,Pro ($200),200,,no,usage allowance,Extra usage,Can purchase additional credits after reaching usage limit,,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-200,Pro ($200),200,,no,usage allowance,Shared allowance from December 2026,"Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",,,yes,https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-500,Pro ($500),500,,no,usage allowance,Codex 5-hour limit,None (vendor: Pro plans currently have no five-hour limit),5h,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-500,Pro ($500),500,,no,usage allowance,Weekly usage,Weekly limits may also apply,7d,,no,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-500,Pro ($500),500,,no,usage allowance,Codex Cloud,"Included (Pro includes everything in Plus, incl. Codex on the web and cloud-based integrations)",,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-500,Pro ($500),500,,no,usage allowance,Extra usage,Can purchase additional credits after reaching usage limit,,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-500,Pro ($500),500,,no,usage allowance,Ultrafast mode,Included on Pro $500 (8x included usage for GPT-6 Astra / GPT-6.1 Sol Ultrafast),,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,pro-500,Pro ($500),500,,no,usage allowance,Shared allowance from December 2026,"Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",,,yes,https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,"Codex local messages, GPT-6 Astra",5 to 45 per 5 hours,5h,45,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,"Codex local messages, GPT-6.1 Sol",15 to 160 per 5 hours,5h,160,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,"Codex local messages, GPT-6.1 Terra",35 to 285 per 5 hours,5h,285,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,"Codex local messages, GPT-6 Sol",15 to 150 per 5 hours,5h,150,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,"Codex local messages, GPT-6 Luna","350 to 3,000 per 5 hours",5h,3000,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,Weekly usage,Weekly limits may also apply,7d,,no,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,Codex Cloud,Included (larger virtual machines for cloud chats),,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,Extra usage,Workspaces with flexible pricing can purchase additional workspace credits,,,yes,https://learn.chatgpt.com/docs/pricing,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business,Business,25,20,yes,messages per 5 hours,Shared allowance from December 2026,"Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",,,yes,https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits,2026-11-01
+chatgpt,ChatGPT + Codex,OpenAI,business-codex,Business Codex (pay as you go),,,no,usage (pay as you go),Usage,Pay as you go based on usage; no limit figures published,,,no,https://chatgpt.com/pricing,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,enterprise,Enterprise & Edu,,,no,credits,Rate limits (flexible pricing),No fixed rate limits; usage scales with credits,,,yes,https://learn.chatgpt.com/docs/pricing,2026-10-31
+chatgpt,ChatGPT + Codex,OpenAI,enterprise,Enterprise & Edu,,,no,credits,Rate limits (without flexible pricing),Same per-seat usage limits as Plus for most features,,,yes,https://learn.chatgpt.com/docs/pricing,2026-10-31
+cursor,Cursor,Cursor (bundled with X Premium and Grok),free,Free,0,,no,usage pool,AI usage,Limited agent requests; Limited Chat requests,7d,,no,https://cursor.com/pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),free,Free,0,,no,usage pool,Third-party models,Not available,,,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),plus,Plus,8,6.67,no,usage pool,AI usage,"Base (shared AI usage pool across Cursor and Grok, refreshes weekly)",7d,,no,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),plus,Plus,8,6.67,no,usage pool,Models,Only Grok models are available on this plan,,,yes,https://cursor.com/pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),plus,Plus,8,6.67,no,usage pool,Model settings,"Cursor models at fixed settings: Fast off, medium effort, Grok 4.7 at 256k context; no Auto, Cloud Agents, Automations, Bugbot, Origin, third-party models or own API keys",,,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),plus,Plus,8,6.67,no,usage pool,Annual price,$80/yr,,80,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),premium,Premium,30,25,no,usage pool,AI usage,4x more usage compared to Plus,7d,4,yes,https://cursor.com/pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),premium,Premium,30,25,no,usage pool,Third-party models,"API list price, from prepaid credit",,,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),premium,Premium,30,25,no,usage pool,Annual price,$300/yr,,300,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),super,Super,100,83.33,no,usage pool,AI usage,15x more usage compared to Plus,7d,15,yes,https://cursor.com/pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),super,Super,100,83.33,no,usage pool,Third-party models,"API list price, from prepaid credit",,,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),super,Super,100,83.33,no,usage pool,Annual price,"$1,000/yr",,1000,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),ultra,Ultra,200,166.67,no,usage pool,AI usage,50x more usage compared to Plus,7d,50,yes,https://cursor.com/pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),ultra,Ultra,200,166.67,no,usage pool,Third-party models,"API list price, from prepaid credit",,,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),ultra,Ultra,200,166.67,no,usage pool,Annual price,"$2,000/yr",,2000,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),teams,Teams,30,,yes,usage pool,AI usage,Matches the seat's tier (4-50x Plus),7d,,yes,https://cursor.com/pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),teams,Teams,30,,yes,usage pool,Third-party models,API list price plus the Cursor Token Rate on eligible models,,,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),teams,Teams,30,,yes,usage pool,Cursor Token Rate,$0.25 per million tokens on eligible third-party requests (incl. BYOK),,0.25,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),enterprise,Enterprise,,,no,usage pool,AI usage,Pooled,,,no,https://cursor.com/docs/models-and-pricing,2026-10-30
+cursor,Cursor,Cursor (bundled with X Premium and Grok),enterprise,Enterprise,,,no,usage pool,Cursor Token Rate,$0.25 per million tokens on eligible third-party requests (incl. BYOK),,0.25,yes,https://cursor.com/docs/models-and-pricing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),free,Free,0,,no,AI credits per month,Code completions,"2,000 per month",month,2000,yes,https://github.com/features/copilot/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),free,Free,0,,no,AI credits per month,Chat and agent,Limited chat and agent usage; credit amount not published,month,,no,https://github.com/features/copilot/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),free,Free,0,,no,AI credits per month,Models,Auto model selection only,,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),free,Free,0,,no,AI credits per month,Purchase additional AI credits,Not included,,,yes,https://github.com/features/copilot/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),student,Student,0,,no,AI credits per month,AI credits,An allowance of GitHub AI Credits (amount not published),month,,no,https://docs.github.com/en/copilot/get-started/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),student,Student,0,,no,AI credits per month,Code completions,Unlimited,,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),student,Student,0,,no,AI credits per month,Models,Auto model selection only,,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),student,Student,0,,no,AI credits per month,Agents,Excludes third-party agents,,,yes,https://docs.github.com/en/copilot/get-started/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro,Pro,10,,no,AI credits per month,AI credits,"1,000 base + 500 flex = 1,500 credits ($15)",month,1500,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro,Pro,10,,no,AI credits per month,Code completions,Unlimited,,,yes,https://github.com/features/copilot/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro,Pro,10,,no,AI credits per month,Extra usage,"Additional credits at $0.01 each, budget set in USD; additional usage may be capped",,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro,Pro,10,,no,AI credits per month,Auto model discount,10% discount on model costs with auto model selection,,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro,Pro,10,,no,AI credits per month,Legacy annual plan,"300 premium requests per month, $0.04 per extra request",month,300,yes,https://docs.github.com/en/copilot/concepts/billing/copilot-requests,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro-plus,Pro+,39,,no,AI credits per month,AI credits,"3,900 base + 3,100 flex = 7,000 credits ($70)",month,7000,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro-plus,Pro+,39,,no,AI credits per month,Code completions,Unlimited,,,yes,https://github.com/features/copilot/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro-plus,Pro+,39,,no,AI credits per month,Extra usage,"Additional credits at $0.01 each, budget set in USD; additional usage may be capped",,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro-plus,Pro+,39,,no,AI credits per month,Auto model discount,10% discount on model costs with auto model selection,,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),pro-plus,Pro+,39,,no,AI credits per month,Legacy annual plan,"1,500 premium requests per month, $0.04 per extra request",month,1500,yes,https://docs.github.com/en/copilot/concepts/billing/copilot-requests,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),max,Max,100,,no,AI credits per month,AI credits,"10,000 base + 10,000 flex = 20,000 credits ($200)",month,20000,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),max,Max,100,,no,AI credits per month,Code completions,Unlimited,,,yes,https://github.com/features/copilot/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),max,Max,100,,no,AI credits per month,Extra usage,"Additional credits at $0.01 each, budget set in USD; additional usage may be capped",,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),max,Max,100,,no,AI credits per month,Auto model discount,"10% for paid plans; Max had 30% through October 28, 2026 (now expired, page not yet updated)",,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),business,Business,19,,yes,AI credits per user per month (pooled),AI credits,"1,900 per user per month, pooled across the organization/enterprise",month,1900,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),business,Business,19,,yes,AI credits per user per month (pooled),Extra usage,"$0.01 per AI credit beyond the pool; paid usage enabled by default, admins can disable it; may be capped",,,yes,https://docs.github.com/en/copilot/get-started/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),business,Business,19,,yes,AI credits per user per month (pooled),Code completions,"Unlimited; no credits used, even with a $0 budget",,,yes,https://docs.github.com/en/copilot/get-started/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),enterprise,Enterprise,39,,yes,AI credits per user per month (pooled),AI credits,"3,900 per user per month, pooled across the organization/enterprise",month,3900,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),enterprise,Enterprise,39,,yes,AI credits per user per month (pooled),Extra usage,"$0.01 per AI credit beyond the pool; paid usage enabled by default, admins can disable it; may be capped",,,yes,https://docs.github.com/en/copilot/get-started/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),enterprise,Enterprise,39,,yes,AI credits per user per month (pooled),Code completions,"Unlimited; no credits used, even with a $0 budget",,,yes,https://docs.github.com/en/copilot/get-started/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),copilot-access,Copilot access,10,,yes,Metered AI credits (no included allowance),AI credits,No included allowance; metered usage billed from first use,,0,yes,https://docs.github.com/en/copilot/get-started/plans,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),copilot-access,Copilot access,10,,yes,Metered AI credits (no included allowance),Paid usage policy,"Must stay enabled; if disabled, features that use credits are blocked",,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing,2026-10-30
+github-copilot,GitHub Copilot,GitHub (Microsoft),copilot-access,Copilot access,10,,yes,Metered AI credits (no included allowance),Code completions,Unlimited; no credits used,,,yes,https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,free,Free,0,,no,usage allowance,Gemini app usage,Standard limits,5h,,no,https://support.google.com/gemini/answer/17004136,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,free,Free,0,,no,usage allowance,Antigravity,"Basic weekly rate limits; 'A meaningful quota, refreshed weekly'",7d,,no,https://antigravity.google/docs/plans,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,free,Free,0,,no,usage allowance,Antigravity CLI (replaced Gemini CLI),"Gemini CLI replaced by Antigravity CLI on June 18, 2026; covered by the Antigravity weekly quota, no request count published",7d,,no,https://geminicli.com/plans/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,free,Free,0,,no,usage allowance,Storage,15 GB,,15,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-plus,AI Plus,4.99,,no,usage allowance,Gemini app usage,2x the Free limits,5h,2,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-plus,AI Plus,4.99,,no,usage allowance,Antigravity,"Same as users without Pro/Ultra: 'A meaningful quota, refreshed weekly'",7d,,no,https://antigravity.google/docs/plans,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-plus,AI Plus,4.99,,no,usage allowance,Gemini CLI,Not supported,,,yes,https://geminicli.com/docs/resources/quota-and-pricing/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-plus,AI Plus,4.99,,no,usage allowance,Flow credits,200 per month,month,200,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-plus,AI Plus,4.99,,no,usage allowance,Storage,400 GB,,400,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-pro,AI Pro,19.99,,no,usage allowance,Gemini app usage,4x the Free limits,5h,4,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-pro,AI Pro,19.99,,no,usage allowance,Antigravity,"Entry rate limits to the agent model; 'A high, generous quota, refreshed every five hours until the weekly limit is reached'",5h,,no,https://antigravity.google/docs/plans,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-pro,AI Pro,19.99,,no,usage allowance,Antigravity CLI (replaced Gemini CLI),"Gemini CLI replaced by Antigravity CLI on June 18, 2026 for Google One users; covered by the Antigravity quota, no request count published",5h,,no,https://geminicli.com/plans/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-pro,AI Pro,19.99,,no,usage allowance,Flow credits,"1,000 per month",month,1000,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-pro,AI Pro,19.99,,no,usage allowance,Extra usage,"Purchasable AI credits for Antigravity overage, Flow and the Gemini app",,,yes,https://antigravity.google/docs/plans,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-pro,AI Pro,19.99,,no,usage allowance,Storage,5 TB,,5,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-5x,AI Ultra 5x,99.99,,no,usage allowance,Gemini app usage,5x the AI Pro limits,5h,5,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-5x,AI Ultra 5x,99.99,,no,usage allowance,Antigravity,5x the Pro limit; 'Higher rate limits to agent model'; quota refreshed every five hours,5h,5,yes,https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-5x,AI Ultra 5x,99.99,,no,usage allowance,Antigravity CLI (replaced Gemini CLI),"Gemini CLI replaced by Antigravity CLI on June 18, 2026 for Google One users; covered by the Antigravity quota, no request count published",5h,,no,https://geminicli.com/plans/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-5x,AI Ultra 5x,99.99,,no,usage allowance,Flow credits,"10,000 per month",month,10000,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-5x,AI Ultra 5x,99.99,,no,usage allowance,Extra usage,"Purchasable AI credits for Antigravity overage, Flow and the Gemini app",,,yes,https://antigravity.google/docs/plans,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-5x,AI Ultra 5x,99.99,,no,usage allowance,Storage,20 TB,,20,yes,https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-20x,AI Ultra 20x,199.99,,no,usage allowance,Gemini app usage,20x the AI Pro limits,5h,20,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-20x,AI Ultra 20x,199.99,,no,usage allowance,Antigravity,20x the Pro limit; 'Highest rate limits to agent model'; quota refreshed every five hours,5h,20,yes,https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-20x,AI Ultra 20x,199.99,,no,usage allowance,Antigravity CLI (replaced Gemini CLI),"Gemini CLI replaced by Antigravity CLI on June 18, 2026 for Google One users; covered by the Antigravity quota, no request count published",5h,,no,https://geminicli.com/plans/,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-20x,AI Ultra 20x,199.99,,no,usage allowance,Flow credits,"25,000 per month",month,25000,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-20x,AI Ultra 20x,199.99,,no,usage allowance,Extra usage,"Purchasable AI credits for Antigravity overage, Flow and the Gemini app",,,yes,https://antigravity.google/docs/plans,2026-10-30
+google-ai,"Google AI (Gemini, Antigravity)",Google,ai-ultra-20x,AI Ultra 20x,199.99,,no,usage allowance,Storage,30 TB,,,yes,https://gemini.google/us/subscriptions/?hl=en,2026-10-30
+devin,Devin (Windsurf),Cognition,free,Free,0,,no,usage allowance,Agent usage,Light quota to code with agents; limited model availability,7d,,no,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,free,Free,0,,no,usage allowance,Tab completions and inline edits,Unlimited,,,yes,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,pro,Pro,20,,no,usage allowance,Agent usage,"Increased quotas, including access to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading open source models; full model availability; refreshed daily and weekly",7d,,no,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,pro,Pro,20,,no,usage allowance,SWE-2 model,Free use of SWE-2,,,yes,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,pro,Pro,20,,no,usage allowance,Cloud agents,Devin Cloud included,,,yes,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,pro,Pro,20,,no,usage allowance,Extra usage,Purchased at API pricing,,,yes,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,max,Max,200,,no,usage allowance,Agent usage,Significantly higher quotas than Pro,7d,,no,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,max,Max,200,,no,usage allowance,Extra usage,Purchased at API pricing,,,yes,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,teams,Teams,40,,yes,usage allowance,Agent usage,Everything in Pro; each full user includes their own generous quota and access to Devin Desktop,7d,,no,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,teams,Teams,40,,yes,usage allowance,Members,Up to 200 users,,200,yes,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,enterprise,Enterprise,,,no,usage allowance,Agent usage,Let's talk (custom),,,no,https://devin.ai/pricing,2026-10-30
+devin,Devin (Windsurf),Cognition,enterprise,Enterprise,,,no,usage allowance,Members,Unlimited,,,yes,https://devin.ai/pricing,2026-10-30
+replit,Replit,Replit,starter,Starter,0,,no,credits,Agent credits,"Daily Agent credits that reset each day, up to a monthly cap; no amounts stated",day,,no,https://docs.replit.com/billing/plans/starter-plan,2026-10-30
+replit,Replit,Replit,starter,Starter,0,,no,credits,Free Mode,Free Mode with a daily cap; no amount stated,day,,no,https://docs.replit.com/billing/ai-billing,2026-10-30
+replit,Replit,Replit,starter,Starter,0,,no,credits,Cloud usage credits,"Monthly credits for production databases, object storage and publishing; no amount stated",month,,no,https://docs.replit.com/billing/plans/starter-plan,2026-10-30
+replit,Replit,Replit,starter,Starter,0,,no,credits,Published apps,"1 free published app, taken down after 30 days",,1,yes,https://docs.replit.com/billing/plans/starter-plan,2026-10-30
+replit,Replit,Replit,starter,Starter,0,,no,credits,Collaboration seats,0,,0,yes,https://docs.replit.com/billing/ai-billing,2026-10-30
+replit,Replit,Replit,starter,Starter,0,,no,credits,Active background tasks,0,,0,yes,https://docs.replit.com/billing/ai-billing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Free Mode chat,Up to 30 hours of chat on Free Mode,1mo,30,yes,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Free Mode projects,Up to 60 projects on Free Mode,1mo,60,yes,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Free Mode allowance refresh,Free Mode allowance refreshes every five hours (Core and Pro),5h,,yes,https://docs.replit.com/features/agent/agent-modes.md,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Credits,$20 towards more powerful models,month,20,yes,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Collaboration seats,5,,5,yes,https://docs.replit.com/billing/ai-billing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Active background tasks,1,,1,yes,https://docs.replit.com/billing/ai-billing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Published apps,Unlimited,,,yes,https://docs.replit.com/billing/ai-billing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Workspaces,Unlimited workspaces,,,yes,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,core,Core,20,18,no,credits,Database rollback,Standard 7 days (Pro gets 28),,7,yes,https://docs.replit.com/billing/plans/replit-pro,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Credits,$100 towards most powerful models,month,100,yes,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Free Mode usage,"""Even more Free Mode usage"" than Core; no hours or project count stated. Allowance refreshes every five hours.",5h,,no,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Collaboration seats,Up to 15 collaborators,,15,yes,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Active background tasks,Run up to 10 tasks simultaneously,,10,yes,https://docs.replit.com/billing/plans/replit-pro,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Credit rollover,Unused credits roll over for two months,,,yes,https://docs.replit.com/billing/plans/replit-pro,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Database rollback,Up to 28 days,,28,yes,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Published apps,Unlimited,,,yes,https://docs.replit.com/billing/ai-billing,2026-10-30
+replit,Replit,Replit,pro,Pro,100,90,no,credits,Per-user fees,No per-user fees; up to 15 builders share pooled credits,,,yes,https://docs.replit.com/billing/plans/replit-pro,2026-10-30
+replit,Replit,Replit,enterprise,Enterprise,,,no,credits,Credits,Custom; contact sales,,,no,https://replit.com/pricing,2026-10-30
+replit,Replit,Replit,enterprise,Enterprise,,,no,credits,Per-user spend limits,Admins can set a different spend limit for each member,,,yes,https://docs.replit.com/billing/managing-spend.md,2026-10-30
+replit,Replit,Replit,enterprise,Enterprise,,,no,credits,Agent mode,Enterprise uses one Auto mode instead of Free Mode,,,yes,https://docs.replit.com/features/agent/agent-modes.md,2026-10-30
+lovable,Lovable,Lovable,free,Free,0,,no,credits,Daily chat allowance,Included,day,,no,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,free,Free,0,,no,credits,Daily build credits,"5 per day, up to 30 per month",day,5,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,free,Free,0,,no,credits,Cloud credits,20 per month,month,20,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,free,Free,0,,no,credits,AI credits,4 per month,month,4,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,free,Free,0,,no,credits,Connector credits,1 per month,month,1,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,free,Free,0,,no,credits,Domains,5 lovable.app domains,,5,yes,https://lovable.dev/pricing,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,Plan credits,"100 per month at $25; 200 at $50, 400 at $100, 800 at $200, 1,200 at $294, 2,000 at $480, 3,000 at $705, 4,000 at $920, 5,000 at $1,125, 7,500 at $1,688, 10,000 at $2,250",month,100,yes,https://docs.lovable.dev/introduction/subscription-plans,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,Daily chat allowance,"Included, larger than Free",day,,no,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,Daily build credits,"5 per day, no monthly cap",day,5,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,Cloud credits,20 per month,month,20,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,AI credits,4 per month,month,4,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,Connector credits,1 per month,month,1,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,Credit rate,$0.25 per credit,,0.25,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,pro,Pro,25,21,no,credits,Top-up price,$15 per 50 credits ($0.30 per credit),,0.3,yes,https://docs.lovable.dev/introduction/credit-top-ups.md,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,Plan credits,"100 per month at $50; 200 at $100, 400 at $200, 800 at $400, 1,200 at $588, 2,000 at $960, 3,000 at $1,410, 4,000 at $1,840, 5,000 at $2,250, 7,500 at $3,300, 10,000 at $4,300",month,100,yes,https://docs.lovable.dev/introduction/subscription-plans,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,Daily chat allowance,"Included, larger than Free",day,,no,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,Daily build credits,"5 per day, no monthly cap",day,5,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,Cloud credits,20 per month,month,20,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,AI credits,4 per month,month,4,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,Connector credits,1 per month,month,1,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,Credit rate,$0.50 per credit,,0.5,yes,https://docs.lovable.dev/introduction/plans-and-credits,2026-10-30
+lovable,Lovable,Lovable,business,Business,50,42,no,credits,Top-up price,$30 per 50 credits ($0.60 per credit),,0.6,yes,https://docs.lovable.dev/introduction/credit-top-ups.md,2026-10-30
+lovable,Lovable,Lovable,enterprise,Enterprise,,,no,credits,Plan credits,Volume-based; Enterprise credit terms are set by contract,,,no,https://docs.lovable.dev/introduction/subscription-plans,2026-10-30
+lovable,Lovable,Lovable,enterprise,Enterprise,,,no,credits,Daily grants and monthly Cloud/AI grants,"Not included: no daily chat allowance, daily build credits, or monthly Cloud and AI grants",,,no,https://docs.lovable.dev/introduction/subscription-plans,2026-10-30
+v0,v0,Vercel,free,Free,0,,no,messages,Messages,7 message/day limit,day,7,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,free,Free,0,,no,messages,Included credits,"Not stated on the pricing page; the card lists only ""Free access to v0""",,,no,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,plus,Plus,30,,yes,credits,Included credits,$30 of included monthly credits per user,month,30,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,plus,Plus,30,,yes,credits,Daily credits,$2 of free daily credits on login per user,day,2,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,plus,Plus,30,,yes,credits,Models,Access to all models,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,plus,Plus,30,,yes,credits,Additional credits,Purchase additional credits outside of your monthly usage shared across your team,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,business,Business,100,,yes,credits,Included credits,$30 of included monthly credits per user,month,30,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,business,Business,100,,yes,credits,Daily credits,$2 of free daily credits on login per user,day,2,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,business,Business,100,,yes,credits,Models,Access to all models,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,business,Business,100,,yes,credits,Training,Training opt-out by default,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,business,Business,100,,yes,credits,Additional credits,Purchase additional credits outside of your monthly usage shared across your team,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,enterprise,Enterprise,,,no,credits,Included credits,"Not stated; price shown as ""Custom""",,,no,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,enterprise,Enterprise,,,no,credits,Priority access,Priority access for better performance and no queues,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,enterprise,Enterprise,,,no,credits,Training,Your data is never used for training,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,enterprise,Enterprise,,,no,credits,Security,SAML SSO; Role-based access control,,,yes,https://v0.app/pricing,2026-10-30
+v0,v0,Vercel,enterprise,Enterprise,,,no,credits,Support,Guaranteed customer support SLAs,,,yes,https://v0.app/pricing,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,Tokens,1M per month,month,1000000,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,Daily tokens,300K per day,day,300000,yes,https://support.bolt.new/account/tokens.md,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,Token reset,Monthly tokens reset on the 1st of each calendar month; daily cap resets every day without carry-over,,,yes,https://support.bolt.new/account/tokens.md,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,Token rollover,Unused tokens do not roll over,,,yes,https://support.bolt.new/account/tokens.md,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,Web requests,"333,333 per month (hard limit)",month,333333,yes,https://support.bolt.new/bolt-cloud/hosting/plans.md,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,Hosting bandwidth,10 GB per month (hard limit),month,10,yes,https://support.bolt.new/bolt-cloud/hosting/plans.md,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,File uploads,10MB per file,,10,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,free,Free,0,,no,tokens,Attachments per message,"5 files, up to 10 MB each",,5,yes,https://support.bolt.new/building/upload-files.md,2026-10-30
+bolt,Bolt,StackBlitz,lite,Lite,9,,no,usage allowance (Forge),Forge usage,Forge allowance,month,,no,https://support.bolt.new/account/bolt-forge.md,2026-10-30
+bolt,Bolt,StackBlitz,lite,Lite,9,,no,usage allowance (Forge),Daily limit,There's no daily limit to your Forge usage.,,,yes,https://support.bolt.new/account/bolt-forge.md,2026-10-30
+bolt,Bolt,StackBlitz,lite,Lite,9,,no,usage allowance (Forge),Extra usage,Cannot buy extra usage,,,yes,https://support.bolt.new/account/bolt-forge.md,2026-10-30
+bolt,Bolt,StackBlitz,lite,Lite,9,,no,usage allowance (Forge),Attachments per message,"20 files, up to 100 MB each",,20,yes,https://support.bolt.new/account/bolt-forge.md,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,Tokens,Starts at 10M per month (10M on the $25 tier),month,10000000,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,Daily tokens,No Limit,,,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,Token rollover,"Unused tokens roll over, valid for two months from the start of the billing cycle in which they were granted",,,yes,https://support.bolt.new/account/tokens.md,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,Web requests,1M per month (pay-as-you-go available),month,1000000,yes,https://support.bolt.new/bolt-cloud/hosting/plans.md,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,Hosting bandwidth,30 GB per month (pay-as-you-go available),month,30,yes,https://support.bolt.new/bolt-cloud/hosting/plans.md,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,File uploads,100MB per file,,100,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,Attachments per message,"20 files, up to 100 MB each",,20,yes,https://support.bolt.new/building/upload-files.md,2026-10-30
+bolt,Bolt,StackBlitz,pro,Pro,25,18,no,tokens,Token reloads,Available on the highest individual monthly Pro plan or any annual Pro plan; price not published,,,no,https://support.bolt.new/account/tokens.md,2026-10-30
+bolt,Bolt,StackBlitz,teams,Teams,30,,yes,tokens,Tokens,Starts at 10M per member per month; tokens not shared among members,month,10000000,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,teams,Teams,30,,yes,tokens,Daily tokens,No Limit,,,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,teams,Teams,30,,yes,tokens,Token rollover,Included; rollover tokens stay linked to the member who accrued them,,,yes,https://support.bolt.new/account/tokens.md,2026-10-30
+bolt,Bolt,StackBlitz,teams,Teams,30,,yes,tokens,Web requests,Up to 1M per month,month,1000000,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,teams,Teams,30,,yes,tokens,Hosting bandwidth,Pro hosting (30 GB per month) included with every paid subscription,month,30,yes,https://support.bolt.new/bolt-cloud/hosting/plans.md,2026-10-30
+bolt,Bolt,StackBlitz,teams,Teams,30,,yes,tokens,File uploads,100MB per file,,100,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,teams,Teams,30,,yes,tokens,Attachments per message,"20 files, up to 100 MB each",,20,yes,https://support.bolt.new/building/upload-files.md,2026-10-30
+bolt,Bolt,StackBlitz,enterprise,Enterprise,,,no,tokens,Tokens,"Unlimited tokens, priced by consumption",,,no,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,enterprise,Enterprise,,,no,tokens,Daily tokens,No Limit,,,yes,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,enterprise,Enterprise,,,no,tokens,Web requests,Custom,,,no,https://bolt.new/pricing,2026-10-30
+bolt,Bolt,StackBlitz,enterprise,Enterprise,,,no,tokens,File uploads,Custom,,,no,https://bolt.new/pricing,2026-10-30
+kiro,Kiro,Amazon Web Services,free,Free,0,,no,credits,Credits,50 per month,month,50,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,free,Free,0,,no,credits,Models,"Open weight models (e.g. Qwen3 Coder Next, DeepSeek 3.2, MiniMax M2.1) and Claude Sonnet 4.5 for users who signed up with social login or AWS Builder ID",,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,free,Free,0,,no,credits,Rate limits,Access is subject to rate limits,,,no,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,free,Free,0,,no,credits,Add-on credits,Not available; must wait for monthly reset,,,yes,https://kiro.dev/docs/billing/add-on-credits/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro,Pro,20,,yes,credits,Credits,"1,000 per month",month,1000,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro,Pro,20,,yes,credits,Overage,$0.04 per add-on credit,,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro,Pro,20,,yes,credits,Add-on credit packs,From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase,,,yes,https://kiro.dev/docs/billing/add-on-credits/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro,Pro,20,,yes,credits,Models,"Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-plus,Pro+,40,,yes,credits,Credits,"2,000 per month",month,2000,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-plus,Pro+,40,,yes,credits,Overage,$0.04 per add-on credit,,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-plus,Pro+,40,,yes,credits,Add-on credit packs,From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase,,,yes,https://kiro.dev/docs/billing/add-on-credits/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-plus,Pro+,40,,yes,credits,Models,"Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-max,Pro Max,100,,yes,credits,Credits,"5,000 per month",month,5000,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-max,Pro Max,100,,yes,credits,Overage,$0.04 per add-on credit,,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-max,Pro Max,100,,yes,credits,Add-on credit packs,From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase,,,yes,https://kiro.dev/docs/billing/add-on-credits/,2026-10-30
+kiro,Kiro,Amazon Web Services,pro-max,Pro Max,100,,yes,credits,Models,"Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Credits,"10,000 per month",month,10000,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Overage,$0.04 per add-on credit,,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Add-on credit packs,From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase,,,yes,https://kiro.dev/docs/billing/add-on-credits/,2026-10-30
+kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Models,"Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Credits,"Per assigned tier: Pro 1,000; Pro+ 2,000; Pro Max 5,000; Power 10,000",month,,yes,https://kiro.dev/docs/enterprise/billing/,2026-10-30
+kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Overage,"$0.04 per credit, billed at month-end; disabled by default, admins must enable",,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Free tier,Not available for Enterprise,,,yes,https://kiro.dev/pricing/,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),Hosted orb minutes,"Pay-as-you-go for Amp-hosted orbs, billed by the minute",,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),"Hosted orb rate (a1.tiny, 1 CPU / 2 GB)",$0.08/hour,,0.08,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),"Hosted orb rate (a1.small, 2 CPU / 4 GB)",$0.17/hour,,0.17,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),"Hosted orb rate (a1.medium, 4 CPU / 8 GB)",$0.33/hour,,0.33,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),"Hosted orb rate (a1.large, 8 CPU / 16 GB)",$0.66/hour,,0.66,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),"Hosted orb rate (a1.xxlarge, 16 CPU / 32 GB)",$1.32/hour,,1.32,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),Self-hosted orbs,"Unlimited, free",,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),Model tokens,No Amp token fees or limits (bring your own subscription or keys),,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),Paid credits (extra model usage),Charged at provider API prices with no markup; no paid tier needed; purchased credits expire after 12 months,,,yes,https://ampcode.com/docs/pricing,2026-10-30
+amp,Amp,Sourcegraph,megawatt,Individual Megawatt,20,,no,orb minutes,Hosted orb minutes,"45,000 minutes of orbin' time",month,45000,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,megawatt,Individual Megawatt,20,,no,orb minutes,Included agent (model) usage,Paid tiers include agent usage; amount not stated,month,,no,https://ampcode.com/docs/pricing,2026-10-30
+amp,Amp,Sourcegraph,megawatt,Individual Megawatt,20,,no,orb minutes,Default orb size (personal projects),a1.small,,,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,megawatt,Individual Megawatt,20,,no,orb minutes,Self-hosted orbs,"Unlimited, free",,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,megawatt,Individual Megawatt,20,,no,orb minutes,Model tokens,No Amp token fees or limits (bring your own subscription or keys),,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,megawatt-edu,Education (Megawatt at 50% off),10,,no,orb minutes + monthly credits,Monthly credits for other models,$10 in credits each month,month,10,yes,https://ampcode.com/news/edu-discount,2026-10-30
+amp,Amp,Sourcegraph,megawatt-edu,Education (Megawatt at 50% off),10,,no,orb minutes + monthly credits,Hosted orb minutes,Orbs included; minute allowance not stated,,,no,https://ampcode.com/news/edu-discount,2026-10-30
+amp,Amp,Sourcegraph,gigawatt,Individual Gigawatt,200,,no,orb minutes,Hosted orb minutes,"480,000 minutes of orbin' time",1mo,480000,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,gigawatt,Individual Gigawatt,200,,no,orb minutes,Included agent (model) usage,Paid tiers include agent usage; amount not stated,month,,no,https://ampcode.com/docs/pricing,2026-10-30
+amp,Amp,Sourcegraph,gigawatt,Individual Gigawatt,200,,no,orb minutes,"a1.3xlarge orb access (16 CPU / 44 GB, $2.13/hour)",Available only to Gigawatt and Enterprise,,2.13,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,gigawatt,Individual Gigawatt,200,,no,orb minutes,Self-hosted orbs,Free on Individual plans,,,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,gigawatt,Individual Gigawatt,200,,no,orb minutes,Model tokens,No Amp token fees or limits (bring your own subscription or keys),,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,teams,Teams,0,,no,orb minutes,Member tiers,"Members can be on Hobby, Megawatt or Gigawatt",,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,teams,Teams,0,,no,orb minutes,Hosted orb minutes,Shared billing and pooled credits; Hobby members use pooled workspace credits for orbs pay-as-you-go,,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,teams,Teams,0,,no,orb minutes,SAML/OIDC SSO,Free for the whole workspace if at least one member is on a paid tier,,,yes,https://ampcode.com/news/free-agent,2026-10-30
+amp,Amp,Sourcegraph,teams,Teams,0,,no,orb minutes,Self-hosted orbs,Free on Teams,,,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,teams,Teams,0,,no,orb minutes,Model tokens,No Amp token fees or limits; shared BYOK & model routing,,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,enterprise,Enterprise,,,no,pooled credits,Hosted orb minutes,"Pooled credits only, no paid user seats; higher quotas and rate limits, figures not stated",,,no,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,enterprise,Enterprise,,,no,pooled credits,Seats,"Pooled credits only, no paid user seats",,,yes,https://ampcode.com/pricing,2026-10-30
+amp,Amp,Sourcegraph,enterprise,Enterprise,,,no,pooled credits,Self-hosted orbs,"100% of standard price, billed by the minute while connected to a thread (free until October 29, 2026); volume discounts available",,,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,enterprise,Enterprise,,,no,pooled credits,Self-hosted orb standard price (custom sizes),CPUs × $0.0504/hour + GB memory × $0.0162/hour,,,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+amp,Amp,Sourcegraph,enterprise,Enterprise,,,no,pooled credits,Model tokens,Exception to no BYOK token fees or limits; Enterprise terms not stated,,,no,https://ampcode.com/news/free-agent,2026-10-30
+amp,Amp,Sourcegraph,enterprise,Enterprise,,,no,pooled credits,Hosted orb pricing,Shown in project settings; not public,,,no,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
+augment,Augment Code,Augment,standard,Standard,20,,no,usage dollars,Included usage,"$20 per month across LLM, Context Engine and compute",month,20,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,standard,Standard,20,,no,usage dollars,Seats,Up to 50,,50,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,standard,Standard,20,,no,usage dollars,Concurrent sessions,50,,50,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,standard,Standard,20,,no,usage dollars,Compute size,Standard size compute,,,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,standard,Standard,20,,no,usage dollars,Overage,Provider API list price plus a flat 40% fee on LLM usage (no fee on compute); top up as you go,,,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,standard,Standard,20,,no,usage dollars,Top-up validity,12 months after purchase,,12,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,business,Business,100,,no,usage dollars,Included usage,"$100 per month across LLM, Context Engine and compute",month,100,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,business,Business,100,,no,usage dollars,Seats,Up to 50,,50,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,business,Business,100,,no,usage dollars,Concurrent sessions,50,,50,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,business,Business,100,,no,usage dollars,Compute size,Standard size compute,,,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,business,Business,100,,no,usage dollars,Overage,Provider API list price plus a flat 40% fee on LLM usage (no fee on compute); top up as you go,,,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,business,Business,100,,no,usage dollars,Top-up validity,12 months after purchase,,12,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,enterprise,Enterprise,,,no,usage dollars,Included usage,"Custom usage, custom top-up, bespoke usage limits",,,no,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,enterprise,Enterprise,,,no,usage dollars,Seats,Unlimited users,,,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,enterprise,Enterprise,,,no,usage dollars,Concurrent sessions,Unlimited concurrent sessions,,,yes,https://www.augmentcode.com/pricing,2026-10-30
+augment,Augment Code,Augment,enterprise,Enterprise,,,no,usage dollars,Compute size,"Custom size compute, multi-region compute",,,no,https://www.augmentcode.com/pricing,2026-10-30

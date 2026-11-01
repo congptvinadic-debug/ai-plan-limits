@@ -1,0 +1,30 @@
+name: update data
+
+on:
+  schedule:
+    - cron: "15 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download latest data
+        run: |
+          curl -fsSL https://getstackversus.com/api/v1/limits.json -o data/limits.json
+          curl -fsSL https://getstackversus.com/api/v1/limits.csv -o data/limits.csv
+          curl -fsSL https://getstackversus.com/api/v1/changes.json -o data/changes.json
+      - name: Rebuild README table
+        run: python3 scripts/build_readme.py
+      - name: Commit if changed
+        run: |
+          git config user.name "stackversus-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "data: $(date -u +%F)"
+          git push

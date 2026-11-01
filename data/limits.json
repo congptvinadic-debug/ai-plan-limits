@@ -1,0 +1,4087 @@
+{
+  "schema": 1,
+  "updated": "2026-11-01",
+  "license": "CC BY 4.0, link to the tool page",
+  "source": "https://getstackversus.com/limits",
+  "tools": [
+    {
+      "id": "claude",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "kind": "AI assistant + coding agent (Claude Code)",
+      "url": "https://claude.com",
+      "page": "https://getstackversus.com/limits/claude",
+      "metering": "Every plan has usage limits that reset on a rolling five-hour session window; paid plans (Pro, Max, Team, seat-based Enterprise) add weekly limits that reset at a fixed time assigned to the account, and Max plans (and Team premium seats) have a separate weekly limit for Fable. Usage across Claude on web, desktop, mobile, Claude Desktop and Claude Code draws from the same pool. Anthropic publishes no fixed message count: usage depends on conversation length and complexity, attached files, the model, effort level and features used. Anthropic publishes multipliers instead: Pro is at least 5x Free per session, Max is 5x or 20x Pro, Team standard is 1.25x Pro and Team premium is 6.25x Pro. Anthropic may also apply weekly and monthly caps or model/feature limits at its discretion. When a limit is reached, paid users can enable usage credits billed at standard API rates. Usage-based Enterprise seats include no usage allowance; all tokens are billed at API rates.",
+      "sources": {
+        "pricing": {
+          "name": "Claude pricing",
+          "url": "https://claude.com/pricing"
+        },
+        "pro": {
+          "name": "What is the Pro plan? (Help Center)",
+          "url": "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+        },
+        "max": {
+          "name": "What is the Max plan? (Help Center)",
+          "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
+        },
+        "limits": {
+          "name": "How do usage and length limits work? (Help Center)",
+          "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work"
+        },
+        "code": {
+          "name": "Use Claude Code with your Pro or Max plan (Help Center)",
+          "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan"
+        },
+        "apicredits": {
+          "name": "Apicredits",
+          "url": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans"
+        },
+        "usagecredits": {
+          "name": "Usagecredits",
+          "url": "https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans"
+        },
+        "team": {
+          "name": "Team",
+          "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
+        },
+        "bestpractices": {
+          "name": "Bestpractices",
+          "url": "https://support.claude.com/en/articles/9797557-usage-limit-best-practices"
+        },
+        "enterprisebilling": {
+          "name": "Enterprisebilling",
+          "url": "https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan"
+        },
+        "ultra": {
+          "name": "What is the Ultra plan? (Help Center)",
+          "url": "https://support.claude.com/en/articles/17728952"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Session usage",
+              "value": "Free covers everyday questions; limit resets on a rolling five-hour window",
+              "window": "5h",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Claude Code",
+              "value": "Not included",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Projects",
+              "value": "Up to 5",
+              "numeric": 5,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Context window",
+              "value": "Up to 1M, varies by model",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Fable",
+              "value": "Not available",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "priceUsd": 20,
+          "annualMonthlyUsd": 17,
+          "annualNote": "$200 billed up front",
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Session usage",
+              "value": "More usage than Free every 5 hours; no multiple stated",
+              "window": "5h",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limit across all models, resets at a fixed time assigned to the account",
+              "window": "7d",
+              "published": false,
+              "source": "pro",
+              "sourceUrl": "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+            },
+            {
+              "metric": "Fable",
+              "value": "Usage credits",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Claude Code",
+              "value": "Included, shares the same limits",
+              "published": true,
+              "source": "code",
+              "sourceUrl": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan"
+            },
+            {
+              "metric": "Usage credits",
+              "value": "Optional usage credits billed at standard API rates",
+              "published": true,
+              "source": "usagecredits",
+              "sourceUrl": "https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans"
+            },
+            {
+              "metric": "API credits",
+              "value": "Not included",
+              "published": true,
+              "source": "apicredits",
+              "sourceUrl": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans"
+            },
+            {
+              "metric": "Context window",
+              "value": "Up to 1M, varies by model",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "max-5x",
+          "name": "Max",
+          "priceUsd": 100,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "priceNote": "Monthly subscription only; web price, mobile may vary",
+          "limits": [
+            {
+              "metric": "Session usage",
+              "value": "5x the Pro plan's usage every five hours",
+              "window": "5h",
+              "numeric": 5,
+              "published": true,
+              "source": "max",
+              "sourceUrl": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "5x the Pro plan's usage every week; separate weekly limit for Fable",
+              "window": "7d",
+              "published": true,
+              "source": "max",
+              "numeric": 5,
+              "sourceUrl": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
+            },
+            {
+              "metric": "Fable",
+              "value": "50% of weekly limits",
+              "window": "7d",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Output limits",
+              "value": "Higher output limits for all tasks",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "API credits",
+              "value": "$100/month in Claude API credits (Claude Platform only; not usable in Claude Code or the Claude apps)",
+              "window": "month",
+              "numeric": 100,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Claude Code",
+              "value": "Included, shares the same limits",
+              "published": true,
+              "source": "code",
+              "sourceUrl": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan"
+            },
+            {
+              "metric": "Usage credits",
+              "value": "Optional usage credits billed at standard API rates",
+              "published": true,
+              "source": "usagecredits",
+              "sourceUrl": "https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans"
+            },
+            {
+              "metric": "Context window",
+              "value": "Up to 1M, varies by model",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30",
+          "formerName": "Max 5x"
+        },
+        {
+          "id": "max-20x",
+          "name": "Ultra",
+          "priceUsd": 200,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "priceNote": "Monthly subscription only; web price, mobile may vary",
+          "limits": [
+            {
+              "metric": "Session usage",
+              "value": "No five-hour limit for verified accounts (verified automatically from account and payment history; a temporary limit applies until then)",
+              "window": "5h",
+              "published": true,
+              "source": "ultra",
+              "sourceUrl": "https://support.claude.com/en/articles/17728952"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "10x the Pro plan's usage every week; separate weekly limit for Fable",
+              "window": "7d",
+              "published": true,
+              "source": "ultra",
+              "numeric": 10,
+              "sourceUrl": "https://support.claude.com/en/articles/17728952"
+            },
+            {
+              "metric": "Fable",
+              "value": "50% of weekly limits",
+              "window": "7d",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Output limits",
+              "value": "Higher output limits for all tasks",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "API credits",
+              "value": "$200/month in Claude API credits (Claude Platform only; not usable in Claude Code or the Claude apps)",
+              "window": "month",
+              "numeric": 200,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Claude Code",
+              "value": "Included, shares the same limits",
+              "published": true,
+              "source": "code",
+              "sourceUrl": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan"
+            },
+            {
+              "metric": "Usage credits",
+              "value": "Optional usage credits billed at standard API rates",
+              "published": true,
+              "source": "usagecredits",
+              "sourceUrl": "https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans"
+            },
+            {
+              "metric": "Context window",
+              "value": "Up to 1M, varies by model",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30",
+          "formerName": "Max 20x"
+        },
+        {
+          "id": "team-standard",
+          "name": "Team (standard seat)",
+          "priceUsd": 25,
+          "annualMonthlyUsd": 20,
+          "perSeat": true,
+          "seatNote": "2 to 150 seats",
+          "unit": "usage allowance",
+          "priceNote": "2 to 150 seats; US prices excluding tax",
+          "limits": [
+            {
+              "metric": "Session usage",
+              "value": "1.25x the Pro per-session allowance",
+              "window": "5h",
+              "numeric": 1.25,
+              "published": true,
+              "source": "team",
+              "sourceUrl": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limit across all models, per member, resets at a fixed time assigned to the account",
+              "window": "7d",
+              "published": false,
+              "source": "team",
+              "sourceUrl": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
+            },
+            {
+              "metric": "Seats",
+              "value": "2 to 150 seats",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "API credits (team pool cap)",
+              "value": "Up to $500/month pooled across the team",
+              "window": "month",
+              "numeric": 500,
+              "published": true,
+              "source": "apicredits",
+              "sourceUrl": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans"
+            },
+            {
+              "metric": "API credits per seat",
+              "value": "$20 per standard seat, added to the team pool",
+              "window": "month",
+              "numeric": 20,
+              "published": true,
+              "source": "apicredits",
+              "sourceUrl": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans"
+            },
+            {
+              "metric": "Claude Code",
+              "value": "Included, shares the same limits",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Usage credits",
+              "value": "Available",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Context window",
+              "value": "Up to 1M, varies by model (Team help article says 200k)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "team-premium",
+          "name": "Team (premium seat)",
+          "priceUsd": 125,
+          "annualMonthlyUsd": 100,
+          "perSeat": true,
+          "seatNote": "2 to 150 seats",
+          "unit": "usage allowance",
+          "priceNote": "2 to 150 seats; US prices excluding tax",
+          "limits": [
+            {
+              "metric": "Session usage",
+              "value": "6.25x the Pro per-session allowance (5x more than a standard seat)",
+              "window": "5h",
+              "numeric": 6.25,
+              "published": true,
+              "source": "team",
+              "sourceUrl": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limit across all models, per member, resets at a fixed time assigned to the account",
+              "window": "7d",
+              "published": false,
+              "source": "team",
+              "sourceUrl": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
+            },
+            {
+              "metric": "Fable",
+              "value": "50% of weekly limits on premium seats",
+              "window": "7d",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Seats",
+              "value": "2 to 150 seats",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "API credits (team pool cap)",
+              "value": "Up to $500/month pooled across the team",
+              "window": "month",
+              "numeric": 500,
+              "published": true,
+              "source": "apicredits",
+              "sourceUrl": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans"
+            },
+            {
+              "metric": "API credits per seat",
+              "value": "$100 per premium seat, added to the team pool",
+              "window": "month",
+              "numeric": 100,
+              "published": true,
+              "source": "apicredits",
+              "sourceUrl": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans"
+            },
+            {
+              "metric": "Claude Code",
+              "value": "Included, shares the same limits",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Usage credits",
+              "value": "Available",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Context window",
+              "value": "Up to 1M, varies by model (Team help article says 200k)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": 20,
+          "perSeat": true,
+          "seatNote": "20-seat minimum, billed annually, plus usage at API rates",
+          "unit": "seat + API usage",
+          "priceNote": "Annual billing only; seat fee plus usage at API rates. Self-serve and sales-assisted versions have the same seat price.",
+          "annualNote": "20-seat minimum, billed annually, plus usage at API rates",
+          "limits": [
+            {
+              "metric": "Usage",
+              "value": "No included usage; all tokens billed at standard API rates",
+              "published": true,
+              "source": "enterprisebilling",
+              "sourceUrl": "https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan"
+            },
+            {
+              "metric": "Seat minimum",
+              "value": "20 seats",
+              "numeric": 20,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Claude Code",
+              "value": "Included (usage billed at API rates)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "API credits",
+              "value": "Not included",
+              "published": true,
+              "source": "apicredits",
+              "sourceUrl": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans"
+            },
+            {
+              "metric": "Fable",
+              "value": "Available",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            },
+            {
+              "metric": "Context window",
+              "value": "Up to 1M, varies by model",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://claude.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT + Codex",
+      "vendor": "OpenAI",
+      "kind": "AI assistant + coding agent (Codex)",
+      "url": "https://chatgpt.com",
+      "page": "https://getstackversus.com/limits/chatgpt",
+      "metering": "Per the vendor, the number of Codex messages depends on the model, task size and complexity, and whether work runs locally or in the cloud. Plus and Standard Business get local-message estimates per five-hour period, given as a range per model; these are \"not fixed message limits\", and the usage dashboard shows current limits and reset times. Cloud tasks may use more of the allowance than local messages. Local messages and cloud chats share the plan's usage allowance, and weekly limits may also apply. Pro plans currently have no five-hour limit. ChatGPT Work shares the same pricing, credits and usage limits as Codex. Fast mode uses included usage at 2.5x (2x on purchased credits). Ultrafast uses 8x (6x on credits). Image generation uses limits about 3-5x faster. After reaching limits, Plus/Pro users and flexible-pricing workspaces can buy credits, which are billed per 1M tokens per model. Enterprise/Edu with flexible pricing have no fixed rate limits.",
+      "sources": {
+        "pricing": {
+          "name": "Codex pricing (OpenAI developer docs)",
+          "url": "https://learn.chatgpt.com/docs/pricing"
+        },
+        "help": {
+          "name": "Using Codex with your ChatGPT plan (Help Center)",
+          "url": "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan"
+        },
+        "codex_pricing": {
+          "name": "Codex Pricing",
+          "url": "https://learn.chatgpt.com/codex/pricing"
+        },
+        "chatgpt_pricing": {
+          "name": "Chatgpt Pricing",
+          "url": "https://chatgpt.com/pricing"
+        },
+        "codex_cloud": {
+          "name": "Codex Cloud",
+          "url": "https://learn.chatgpt.com/codex/cloud"
+        },
+        "usage_limits": {
+          "name": "Understanding ChatGPT and Codex usage limits (Help Center)",
+          "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "messages per 5 hours",
+          "limits": [
+            {
+              "metric": "Codex",
+              "value": "GPT-6 Luna at Standard speed in the desktop app, subject to rollout; no message figures published",
+              "window": "5h",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex (ChatGPT pricing page)",
+              "value": "Limited",
+              "published": false,
+              "source": "chatgpt_pricing",
+              "sourceUrl": "https://chatgpt.com/pricing"
+            },
+            {
+              "metric": "Image generation in Codex",
+              "value": "Not available",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex Cloud",
+              "value": "Not included",
+              "published": true,
+              "source": "help",
+              "sourceUrl": "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan"
+            }
+          ],
+          "checked": "2026-10-31"
+        },
+        {
+          "id": "go",
+          "name": "Go",
+          "priceUsd": 8,
+          "annualMonthlyUsd": null,
+          "unit": "messages per 5 hours",
+          "limits": [
+            {
+              "metric": "Codex",
+              "value": "GPT-6 Luna at Standard speed in the desktop app, subject to rollout; no message figures published",
+              "window": "5h",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex (ChatGPT pricing page)",
+              "value": "Limited",
+              "published": false,
+              "source": "chatgpt_pricing",
+              "sourceUrl": "https://chatgpt.com/pricing"
+            },
+            {
+              "metric": "Codex Cloud",
+              "value": "Not included",
+              "published": true,
+              "source": "help",
+              "sourceUrl": "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan"
+            }
+          ],
+          "checked": "2026-10-31"
+        },
+        {
+          "id": "plus",
+          "name": "Plus",
+          "priceUsd": 20,
+          "annualMonthlyUsd": null,
+          "unit": "messages per 5 hours",
+          "limits": [
+            {
+              "metric": "Codex local messages, GPT-6 Astra",
+              "value": "5 to 45 per 5 hours",
+              "window": "5h",
+              "numeric": 45,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6.1 Sol",
+              "value": "15 to 160 per 5 hours",
+              "window": "5h",
+              "numeric": 160,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6.1 Terra",
+              "value": "35 to 285 per 5 hours",
+              "window": "5h",
+              "numeric": 285,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6 Sol",
+              "value": "15 to 150 per 5 hours",
+              "window": "5h",
+              "numeric": 150,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6 Luna",
+              "value": "350 to 3,000 per 5 hours",
+              "window": "5h",
+              "numeric": 3000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limits may also apply",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex Cloud",
+              "value": "Codex on the web plus cloud-based integrations (automatic code review, Slack)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Can purchase additional credits after reaching usage limit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Credit rate, GPT-6.1 Sol",
+              "value": "50 credits per 1M input tokens, 2.5 per 1M cached input, 250 per 1M output",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Shared allowance from December 2026",
+              "value": "Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",
+              "published": true,
+              "source": "usage_limits",
+              "sourceUrl": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+            }
+          ],
+          "checked": "2026-11-01"
+        },
+        {
+          "id": "pro-100",
+          "name": "Pro ($100)",
+          "priceUsd": 100,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Codex 5-hour limit",
+              "value": "None (vendor: Pro plans currently have no five-hour limit)",
+              "window": "5h",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limits may also apply",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex Cloud",
+              "value": "Included (Pro includes everything in Plus, incl. Codex on the web and cloud-based integrations)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Can purchase additional credits after reaching usage limit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Shared allowance from December 2026",
+              "value": "Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",
+              "published": true,
+              "source": "usage_limits",
+              "sourceUrl": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+            }
+          ],
+          "checked": "2026-11-01"
+        },
+        {
+          "id": "pro-200",
+          "name": "Pro ($200)",
+          "priceUsd": 200,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Codex 5-hour limit",
+              "value": "None (vendor: Pro plans currently have no five-hour limit)",
+              "window": "5h",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limits may also apply",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex Cloud",
+              "value": "Included (Pro includes everything in Plus, incl. Codex on the web and cloud-based integrations)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Can purchase additional credits after reaching usage limit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Shared allowance from December 2026",
+              "value": "Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",
+              "published": true,
+              "source": "usage_limits",
+              "sourceUrl": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+            }
+          ],
+          "checked": "2026-11-01"
+        },
+        {
+          "id": "pro-500",
+          "name": "Pro ($500)",
+          "priceUsd": 500,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Codex 5-hour limit",
+              "value": "None (vendor: Pro plans currently have no five-hour limit)",
+              "window": "5h",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limits may also apply",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex Cloud",
+              "value": "Included (Pro includes everything in Plus, incl. Codex on the web and cloud-based integrations)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Can purchase additional credits after reaching usage limit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Ultrafast mode",
+              "value": "Included on Pro $500 (8x included usage for GPT-6 Astra / GPT-6.1 Sol Ultrafast)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Shared allowance from December 2026",
+              "value": "Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",
+              "published": true,
+              "source": "usage_limits",
+              "sourceUrl": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+            }
+          ],
+          "checked": "2026-11-01"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "priceUsd": 25,
+          "annualMonthlyUsd": 20,
+          "perSeat": true,
+          "unit": "messages per 5 hours",
+          "priceNote": "Per user per month when billed monthly; 2+ users",
+          "annualNote": "Per user per month, billed annually; 2+ users",
+          "limits": [
+            {
+              "metric": "Codex local messages, GPT-6 Astra",
+              "value": "5 to 45 per 5 hours",
+              "window": "5h",
+              "numeric": 45,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6.1 Sol",
+              "value": "15 to 160 per 5 hours",
+              "window": "5h",
+              "numeric": 160,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6.1 Terra",
+              "value": "35 to 285 per 5 hours",
+              "window": "5h",
+              "numeric": 285,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6 Sol",
+              "value": "15 to 150 per 5 hours",
+              "window": "5h",
+              "numeric": 150,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex local messages, GPT-6 Luna",
+              "value": "350 to 3,000 per 5 hours",
+              "window": "5h",
+              "numeric": 3000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Weekly usage",
+              "value": "Weekly limits may also apply",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Codex Cloud",
+              "value": "Included (larger virtual machines for cloud chats)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Workspaces with flexible pricing can purchase additional workspace credits",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Shared allowance from December 2026",
+              "value": "Starting in December, usage allowance is shared across ChatGPT and Codex and measured in tokens; Instant chat does not draw from it. OpenAI expects most users won't wait for a reset more often than now.",
+              "published": true,
+              "source": "usage_limits",
+              "sourceUrl": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+            }
+          ],
+          "checked": "2026-11-01"
+        },
+        {
+          "id": "business-codex",
+          "name": "Business Codex (pay as you go)",
+          "priceUsd": null,
+          "priceNote": "No fixed seat fee; usage-based",
+          "annualMonthlyUsd": null,
+          "unit": "usage (pay as you go)",
+          "limits": [
+            {
+              "metric": "Usage",
+              "value": "Pay as you go based on usage; no limit figures published",
+              "published": false,
+              "source": "chatgpt_pricing",
+              "sourceUrl": "https://chatgpt.com/pricing"
+            }
+          ],
+          "checked": "2026-10-31"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise & Edu",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "priceNote": "Custom pricing; contact sales",
+          "limits": [
+            {
+              "metric": "Rate limits (flexible pricing)",
+              "value": "No fixed rate limits; usage scales with credits",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            },
+            {
+              "metric": "Rate limits (without flexible pricing)",
+              "value": "Same per-seat usage limits as Plus for most features",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
+            }
+          ],
+          "checked": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "vendor": "Cursor (bundled with X Premium and Grok)",
+      "kind": "AI code editor",
+      "url": "https://cursor.com",
+      "page": "https://getstackversus.com/limits/cursor",
+      "metering": "Cursor is sold as part of The X Subscription (Grok, Cursor and X). Every paid plan includes one weekly pool of usage for Cursor models (Grok 4.7, Grok 4.6, Grok 4.5 and Composer 2.5), shared across Agent in the editor, CLI, Cloud Agents, Grok Bot and the Grok apps; different models draw from the pool at different rates and unused usage does not roll over. Tiers are expressed as multiples of the Plus pool (Plus = Base, Premium 4x, Super 15x, Ultra 50x); Cursor publishes no request or credit counts. Third-party models (Claude, GPT, Gemini) are not in the pool: on Premium and above they are billed at API list price from the first request out of prepaid credit; Free and Plus cannot use them. Prepaid credit (manual top-ups or Auto Top-up) also pays for Cursor-model usage beyond the weekly pool at the same per-model rates; credit expires 365 days after purchase and a monthly additional usage limit can cap spend. Teams and Enterprise pay an extra Cursor Token Rate of $0.25 per million tokens on eligible third-party requests (including BYOK). Grok API usage is billed separately and does not draw from the pool.",
+      "sources": {
+        "pricing": {
+          "name": "Cursor pricing",
+          "url": "https://cursor.com/pricing"
+        },
+        "pricing_en_us": {
+          "name": "Pricing En Us",
+          "url": "https://cursor.com/en-US/pricing"
+        },
+        "models_pricing": {
+          "name": "Models Pricing",
+          "url": "https://cursor.com/docs/models-and-pricing"
+        },
+        "usage_limits": {
+          "name": "Usage Limits",
+          "url": "https://cursor.com/help/models-and-usage/usage-limits"
+        },
+        "help_pricing": {
+          "name": "Help Pricing",
+          "url": "https://cursor.com/help/account-and-billing/pricing"
+        },
+        "overages": {
+          "name": "Overages",
+          "url": "https://cursor.com/help/account-and-billing/overages"
+        },
+        "x_subscription": {
+          "name": "X Subscription",
+          "url": "https://cursor.com/help/the-x-subscription/overview"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "usage pool",
+          "limits": [
+            {
+              "metric": "AI usage",
+              "value": "Limited agent requests; Limited Chat requests",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://cursor.com/pricing"
+            },
+            {
+              "metric": "Third-party models",
+              "value": "Not available",
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "plus",
+          "name": "Plus",
+          "priceUsd": 8,
+          "annualMonthlyUsd": 6.67,
+          "unit": "usage pool",
+          "annualNote": "$80/yr (per-month figure derived by dividing by 12)",
+          "limits": [
+            {
+              "metric": "AI usage",
+              "value": "Base (shared AI usage pool across Cursor and Grok, refreshes weekly)",
+              "window": "7d",
+              "published": false,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            },
+            {
+              "metric": "Models",
+              "value": "Only Grok models are available on this plan",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://cursor.com/pricing"
+            },
+            {
+              "metric": "Model settings",
+              "value": "Cursor models at fixed settings: Fast off, medium effort, Grok 4.7 at 256k context; no Auto, Cloud Agents, Automations, Bugbot, Origin, third-party models or own API keys",
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            },
+            {
+              "metric": "Annual price",
+              "value": "$80/yr",
+              "numeric": 80,
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "premium",
+          "name": "Premium",
+          "priceUsd": 30,
+          "annualMonthlyUsd": 25,
+          "unit": "usage pool",
+          "annualNote": "$300/yr (per-month figure derived by dividing by 12)",
+          "limits": [
+            {
+              "metric": "AI usage",
+              "value": "4x more usage compared to Plus",
+              "window": "7d",
+              "numeric": 4,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://cursor.com/pricing"
+            },
+            {
+              "metric": "Third-party models",
+              "value": "API list price, from prepaid credit",
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            },
+            {
+              "metric": "Annual price",
+              "value": "$300/yr",
+              "numeric": 300,
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "super",
+          "name": "Super",
+          "priceUsd": 100,
+          "annualMonthlyUsd": 83.33,
+          "unit": "usage pool",
+          "annualNote": "$1,000/yr (per-month figure derived by dividing by 12)",
+          "limits": [
+            {
+              "metric": "AI usage",
+              "value": "15x more usage compared to Plus",
+              "window": "7d",
+              "numeric": 15,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://cursor.com/pricing"
+            },
+            {
+              "metric": "Third-party models",
+              "value": "API list price, from prepaid credit",
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            },
+            {
+              "metric": "Annual price",
+              "value": "$1,000/yr",
+              "numeric": 1000,
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra",
+          "priceUsd": 200,
+          "annualMonthlyUsd": 166.67,
+          "unit": "usage pool",
+          "annualNote": "$2,000/yr (per-month figure derived by dividing by 12)",
+          "limits": [
+            {
+              "metric": "AI usage",
+              "value": "50x more usage compared to Plus",
+              "window": "7d",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://cursor.com/pricing"
+            },
+            {
+              "metric": "Third-party models",
+              "value": "API list price, from prepaid credit",
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            },
+            {
+              "metric": "Annual price",
+              "value": "$2,000/yr",
+              "numeric": 2000,
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "teams",
+          "name": "Teams",
+          "priceUsd": 30,
+          "priceNote": "$30, $100, or $200 per seat/mo (Premium, Super or Ultra seat tier); pricing page shows $30+/user/month",
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "usage pool",
+          "limits": [
+            {
+              "metric": "AI usage",
+              "value": "Matches the seat's tier (4-50x Plus)",
+              "window": "7d",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://cursor.com/pricing"
+            },
+            {
+              "metric": "Third-party models",
+              "value": "API list price plus the Cursor Token Rate on eligible models",
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            },
+            {
+              "metric": "Cursor Token Rate",
+              "value": "$0.25 per million tokens on eligible third-party requests (incl. BYOK)",
+              "numeric": 0.25,
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "usage pool",
+          "priceNote": "Custom; contact sales",
+          "limits": [
+            {
+              "metric": "AI usage",
+              "value": "Pooled",
+              "published": false,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            },
+            {
+              "metric": "Cursor Token Rate",
+              "value": "$0.25 per million tokens on eligible third-party requests (incl. BYOK)",
+              "numeric": 0.25,
+              "published": true,
+              "source": "models_pricing",
+              "sourceUrl": "https://cursor.com/docs/models-and-pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "GitHub (Microsoft)",
+      "kind": "AI coding assistant + cloud agent",
+      "url": "https://github.com/features/copilot",
+      "page": "https://getstackversus.com/limits/github-copilot",
+      "metering": "Copilot usage is measured in GitHub AI Credits (1 AI credit = $0.01 USD). Each interaction's cost depends on the model and on the input, output and cached tokens used. Copilot Chat, Copilot CLI, Copilot cloud agent, Copilot Spaces, Spark and third-party coding agents use credits. Code completions and next edit suggestions do not use credits and are unlimited on paid plans. Paid individual plans (Pro, Pro+, Max) include base credits matching the subscription price plus a variable flex allotment. Base credits are used first, and the flex allotment 'may change over time'. Copilot Free and Copilot Student include an unpublished allowance with auto model selection only. Copilot Business and Enterprise seats add a per-user monthly allowance to a shared organization/enterprise pool. Usage beyond the pool costs $0.01 per credit, and paid extra usage is enabled by default. Copilot access (eligible enterprises) has no included allowance and is metered from first use. Included credits do not roll over and reset at 00:00:00 UTC on the 1st of each calendar month. Additional usage budgets are set in USD and 'may be capped'. Paid plans get a 10% discount on model costs when using auto model selection. Copilot Pro and Pro+ subscribers on an existing annual plan who stayed on legacy billing after June 1, 2026 continue on premium requests.",
+      "sources": {
+        "plans": {
+          "name": "Copilot plans",
+          "url": "https://github.com/features/copilot/plans"
+        },
+        "billing": {
+          "name": "Usage-based billing for individuals (GitHub Docs)",
+          "url": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+        },
+        "legacy": {
+          "name": "Premium requests, legacy annual plans (GitHub Docs)",
+          "url": "https://docs.github.com/en/copilot/concepts/billing/copilot-requests"
+        },
+        "docs_plans": {
+          "name": "Docs Plans",
+          "url": "https://docs.github.com/en/copilot/get-started/plans"
+        },
+        "org_billing": {
+          "name": "Org Billing",
+          "url": "https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing"
+        },
+        "usage_limits": {
+          "name": "Usage Limits",
+          "url": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/usage-limits"
+        },
+        "business_page": {
+          "name": "Business Page",
+          "url": "https://github.com/features/copilot/copilot-business"
+        },
+        "pricing": {
+          "name": "Pricing",
+          "url": "https://github.com/pricing"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "AI credits per month",
+          "limits": [
+            {
+              "metric": "Code completions",
+              "value": "2,000 per month",
+              "window": "month",
+              "numeric": 2000,
+              "published": true,
+              "source": "plans",
+              "sourceUrl": "https://github.com/features/copilot/plans"
+            },
+            {
+              "metric": "Chat and agent",
+              "value": "Limited chat and agent usage; credit amount not published",
+              "window": "month",
+              "published": false,
+              "source": "plans",
+              "sourceUrl": "https://github.com/features/copilot/plans"
+            },
+            {
+              "metric": "Models",
+              "value": "Auto model selection only",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Purchase additional AI credits",
+              "value": "Not included",
+              "published": true,
+              "source": "plans",
+              "sourceUrl": "https://github.com/features/copilot/plans"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "student",
+          "name": "Student",
+          "priceUsd": 0,
+          "priceNote": "Available to verified students",
+          "annualMonthlyUsd": null,
+          "unit": "AI credits per month",
+          "limits": [
+            {
+              "metric": "AI credits",
+              "value": "An allowance of GitHub AI Credits (amount not published)",
+              "window": "month",
+              "published": false,
+              "source": "docs_plans",
+              "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans"
+            },
+            {
+              "metric": "Code completions",
+              "value": "Unlimited",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Models",
+              "value": "Auto model selection only",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Agents",
+              "value": "Excludes third-party agents",
+              "published": true,
+              "source": "docs_plans",
+              "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "priceUsd": 10,
+          "annualMonthlyUsd": null,
+          "unit": "AI credits per month",
+          "priceNote": "Docs: \"$10 USD per month (free for some users)\"; verified teachers and maintainers of popular open source projects may qualify for free access",
+          "limits": [
+            {
+              "metric": "AI credits",
+              "value": "1,000 base + 500 flex = 1,500 credits ($15)",
+              "window": "month",
+              "numeric": 1500,
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Code completions",
+              "value": "Unlimited",
+              "published": true,
+              "source": "plans",
+              "sourceUrl": "https://github.com/features/copilot/plans"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Additional credits at $0.01 each, budget set in USD; additional usage may be capped",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Auto model discount",
+              "value": "10% discount on model costs with auto model selection",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Legacy annual plan",
+              "value": "300 premium requests per month, $0.04 per extra request",
+              "window": "month",
+              "numeric": 300,
+              "published": true,
+              "source": "legacy",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing/copilot-requests"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro-plus",
+          "name": "Pro+",
+          "priceUsd": 39,
+          "annualMonthlyUsd": null,
+          "unit": "AI credits per month",
+          "limits": [
+            {
+              "metric": "AI credits",
+              "value": "3,900 base + 3,100 flex = 7,000 credits ($70)",
+              "window": "month",
+              "numeric": 7000,
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Code completions",
+              "value": "Unlimited",
+              "published": true,
+              "source": "plans",
+              "sourceUrl": "https://github.com/features/copilot/plans"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Additional credits at $0.01 each, budget set in USD; additional usage may be capped",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Auto model discount",
+              "value": "10% discount on model costs with auto model selection",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Legacy annual plan",
+              "value": "1,500 premium requests per month, $0.04 per extra request",
+              "window": "month",
+              "numeric": 1500,
+              "published": true,
+              "source": "legacy",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing/copilot-requests"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "max",
+          "name": "Max",
+          "priceUsd": 100,
+          "annualMonthlyUsd": null,
+          "unit": "AI credits per month",
+          "limits": [
+            {
+              "metric": "AI credits",
+              "value": "10,000 base + 10,000 flex = 20,000 credits ($200)",
+              "window": "month",
+              "numeric": 20000,
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Code completions",
+              "value": "Unlimited",
+              "published": true,
+              "source": "plans",
+              "sourceUrl": "https://github.com/features/copilot/plans"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Additional credits at $0.01 each, budget set in USD; additional usage may be capped",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            },
+            {
+              "metric": "Auto model discount",
+              "value": "10% for paid plans; Max had 30% through October 28, 2026 (now expired, page not yet updated)",
+              "published": true,
+              "source": "billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "priceUsd": 19,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "AI credits per user per month (pooled)",
+          "limits": [
+            {
+              "metric": "AI credits",
+              "value": "1,900 per user per month, pooled across the organization/enterprise",
+              "window": "month",
+              "numeric": 1900,
+              "published": true,
+              "source": "org_billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "$0.01 per AI credit beyond the pool; paid usage enabled by default, admins can disable it; may be capped",
+              "published": true,
+              "source": "docs_plans",
+              "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans"
+            },
+            {
+              "metric": "Code completions",
+              "value": "Unlimited; no credits used, even with a $0 budget",
+              "published": true,
+              "source": "docs_plans",
+              "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": 39,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "AI credits per user per month (pooled)",
+          "limits": [
+            {
+              "metric": "AI credits",
+              "value": "3,900 per user per month, pooled across the organization/enterprise",
+              "window": "month",
+              "numeric": 3900,
+              "published": true,
+              "source": "org_billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "$0.01 per AI credit beyond the pool; paid usage enabled by default, admins can disable it; may be capped",
+              "published": true,
+              "source": "docs_plans",
+              "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans"
+            },
+            {
+              "metric": "Code completions",
+              "value": "Unlimited; no credits used, even with a $0 budget",
+              "published": true,
+              "source": "docs_plans",
+              "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "copilot-access",
+          "name": "Copilot access",
+          "priceUsd": 10,
+          "priceNote": "$10 per user per month as Copilot Standalone; $0 seat charge for users with a GitHub Enterprise Cloud license. Eligible enterprises only.",
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "Metered AI credits (no included allowance)",
+          "limits": [
+            {
+              "metric": "AI credits",
+              "value": "No included allowance; metered usage billed from first use",
+              "numeric": 0,
+              "published": true,
+              "source": "docs_plans",
+              "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans"
+            },
+            {
+              "metric": "Paid usage policy",
+              "value": "Must stay enabled; if disabled, features that use credits are blocked",
+              "published": true,
+              "source": "org_billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing"
+            },
+            {
+              "metric": "Code completions",
+              "value": "Unlimited; no credits used",
+              "published": true,
+              "source": "org_billing",
+              "sourceUrl": "https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI (Gemini, Antigravity)",
+      "vendor": "Google",
+      "kind": "AI assistant + coding agent (Antigravity, Antigravity CLI)",
+      "url": "https://gemini.google/subscriptions/",
+      "page": "https://getstackversus.com/limits/google-ai",
+      "metering": "In the Gemini app, Google meters compute used instead of daily prompts. Usage limits 'factor in the complexity of your prompt, the features you use, and the length of your chat. Your limit refreshes every 5 hours until you reach your weekly limit.' If you hit the cap on the biggest models, you are moved to smaller models. Media generation, Deep Research, the Pro model and Extended thinking/Deep Think use up the limit faster, and so do higher effort levels. Tiers are multiples: Plus is 2x and Pro 4x the 'standard' (no-plan) limit, and Ultra is 5x or 20x Pro. No prompt counts are published. Google Antigravity (app, IDE extensions and CLI) has its own agent quota that 'correlate[s] with the amount of work done by the agent'. Pro and Ultra get a quota refreshed every five hours up to a weekly rate limit; users without Pro or Ultra get a quota refreshed weekly. No figures are published. Pro and Ultra subscribers can buy AI credits for overage in Antigravity and Flow, and the subscriptions page now says credits can also extend Gemini app limits. Since June 18, 2026, Gemini CLI has been replaced by Antigravity CLI for unpaid and Google One users, so the old Gemini CLI daily request counts no longer apply to these plans.",
+      "sources": {
+        "subs": {
+          "name": "Google AI subscriptions (US)",
+          "url": "https://gemini.google/us/subscriptions/?hl=en"
+        },
+        "blog": {
+          "name": "Everything new in our Google AI subscriptions, I/O 2026 (Google blog, May 19, 2026)",
+          "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/"
+        },
+        "cli": {
+          "name": "Gemini CLI quota and pricing (replaced by Antigravity CLI on June 18, 2026)",
+          "url": "https://geminicli.com/docs/resources/quota-and-pricing/"
+        },
+        "cliplans": {
+          "name": "Cliplans",
+          "url": "https://geminicli.com/plans/"
+        },
+        "help": {
+          "name": "Help",
+          "url": "https://support.google.com/gemini/answer/17004136"
+        },
+        "ag": {
+          "name": "Ag",
+          "url": "https://antigravity.google/pricing"
+        },
+        "agplans": {
+          "name": "Agplans",
+          "url": "https://antigravity.google/docs/plans"
+        },
+        "agcli": {
+          "name": "Agcli",
+          "url": "https://antigravity.google/product/antigravity-cli"
+        },
+        "mig": {
+          "name": "Mig",
+          "url": "https://antigravity.google/docs/cli/gcli-migration/"
+        },
+        "gca": {
+          "name": "Gca",
+          "url": "https://developers.google.com/gemini-code-assist/resources/quotas"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Gemini app usage",
+              "value": "Standard limits",
+              "window": "5h",
+              "published": false,
+              "source": "help",
+              "sourceUrl": "https://support.google.com/gemini/answer/17004136"
+            },
+            {
+              "metric": "Antigravity",
+              "value": "Basic weekly rate limits; 'A meaningful quota, refreshed weekly'",
+              "window": "7d",
+              "published": false,
+              "source": "agplans",
+              "sourceUrl": "https://antigravity.google/docs/plans"
+            },
+            {
+              "metric": "Antigravity CLI (replaced Gemini CLI)",
+              "value": "Gemini CLI replaced by Antigravity CLI on June 18, 2026; covered by the Antigravity weekly quota, no request count published",
+              "window": "7d",
+              "published": false,
+              "source": "cliplans",
+              "sourceUrl": "https://geminicli.com/plans/"
+            },
+            {
+              "metric": "Storage",
+              "value": "15 GB",
+              "numeric": 15,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "ai-plus",
+          "name": "AI Plus",
+          "priceUsd": 4.99,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Gemini app usage",
+              "value": "2x the Free limits",
+              "window": "5h",
+              "numeric": 2,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Antigravity",
+              "value": "Same as users without Pro/Ultra: 'A meaningful quota, refreshed weekly'",
+              "window": "7d",
+              "published": false,
+              "source": "agplans",
+              "sourceUrl": "https://antigravity.google/docs/plans"
+            },
+            {
+              "metric": "Gemini CLI",
+              "value": "Not supported",
+              "published": true,
+              "source": "cli",
+              "sourceUrl": "https://geminicli.com/docs/resources/quota-and-pricing/"
+            },
+            {
+              "metric": "Flow credits",
+              "value": "200 per month",
+              "window": "month",
+              "numeric": 200,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Storage",
+              "value": "400 GB",
+              "numeric": 400,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "ai-pro",
+          "name": "AI Pro",
+          "priceUsd": 19.99,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Gemini app usage",
+              "value": "4x the Free limits",
+              "window": "5h",
+              "numeric": 4,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Antigravity",
+              "value": "Entry rate limits to the agent model; 'A high, generous quota, refreshed every five hours until the weekly limit is reached'",
+              "window": "5h",
+              "published": false,
+              "source": "agplans",
+              "sourceUrl": "https://antigravity.google/docs/plans"
+            },
+            {
+              "metric": "Antigravity CLI (replaced Gemini CLI)",
+              "value": "Gemini CLI replaced by Antigravity CLI on June 18, 2026 for Google One users; covered by the Antigravity quota, no request count published",
+              "window": "5h",
+              "published": false,
+              "source": "cliplans",
+              "sourceUrl": "https://geminicli.com/plans/"
+            },
+            {
+              "metric": "Flow credits",
+              "value": "1,000 per month",
+              "window": "month",
+              "numeric": 1000,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Purchasable AI credits for Antigravity overage, Flow and the Gemini app",
+              "published": true,
+              "source": "agplans",
+              "sourceUrl": "https://antigravity.google/docs/plans"
+            },
+            {
+              "metric": "Storage",
+              "value": "5 TB",
+              "numeric": 5,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "ai-ultra-5x",
+          "name": "AI Ultra 5x",
+          "priceUsd": 99.99,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Gemini app usage",
+              "value": "5x the AI Pro limits",
+              "window": "5h",
+              "numeric": 5,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Antigravity",
+              "value": "5x the Pro limit; 'Higher rate limits to agent model'; quota refreshed every five hours",
+              "window": "5h",
+              "numeric": 5,
+              "published": true,
+              "source": "blog",
+              "sourceUrl": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/"
+            },
+            {
+              "metric": "Antigravity CLI (replaced Gemini CLI)",
+              "value": "Gemini CLI replaced by Antigravity CLI on June 18, 2026 for Google One users; covered by the Antigravity quota, no request count published",
+              "window": "5h",
+              "published": false,
+              "source": "cliplans",
+              "sourceUrl": "https://geminicli.com/plans/"
+            },
+            {
+              "metric": "Flow credits",
+              "value": "10,000 per month",
+              "window": "month",
+              "numeric": 10000,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Purchasable AI credits for Antigravity overage, Flow and the Gemini app",
+              "published": true,
+              "source": "agplans",
+              "sourceUrl": "https://antigravity.google/docs/plans"
+            },
+            {
+              "metric": "Storage",
+              "value": "20 TB",
+              "numeric": 20,
+              "published": true,
+              "source": "blog",
+              "sourceUrl": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "ai-ultra-20x",
+          "name": "AI Ultra 20x",
+          "priceUsd": 199.99,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Gemini app usage",
+              "value": "20x the AI Pro limits",
+              "window": "5h",
+              "numeric": 20,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Antigravity",
+              "value": "20x the Pro limit; 'Highest rate limits to agent model'; quota refreshed every five hours",
+              "window": "5h",
+              "numeric": 20,
+              "published": true,
+              "source": "blog",
+              "sourceUrl": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/"
+            },
+            {
+              "metric": "Antigravity CLI (replaced Gemini CLI)",
+              "value": "Gemini CLI replaced by Antigravity CLI on June 18, 2026 for Google One users; covered by the Antigravity quota, no request count published",
+              "window": "5h",
+              "published": false,
+              "source": "cliplans",
+              "sourceUrl": "https://geminicli.com/plans/"
+            },
+            {
+              "metric": "Flow credits",
+              "value": "25,000 per month",
+              "window": "month",
+              "numeric": 25000,
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Purchasable AI credits for Antigravity overage, Flow and the Gemini app",
+              "published": true,
+              "source": "agplans",
+              "sourceUrl": "https://antigravity.google/docs/plans"
+            },
+            {
+              "metric": "Storage",
+              "value": "30 TB",
+              "published": true,
+              "source": "subs",
+              "sourceUrl": "https://gemini.google/us/subscriptions/?hl=en"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "devin",
+      "name": "Devin (Windsurf)",
+      "vendor": "Cognition",
+      "kind": "AI code editor + cloud agent",
+      "url": "https://devin.ai",
+      "page": "https://getstackversus.com/limits/devin",
+      "metering": "Each paid plan comes with a usage allowance that refreshes automatically on a daily and weekly basis. Cost per message varies by model, task size and complexity, and reasoning required. If a paid user goes beyond included usage, extra usage can be purchased and is consumed at API pricing. Cognition publishes no credit, request or message counts for any plan.",
+      "sources": {
+        "pricing": {
+          "name": "Devin pricing (windsurf.com/pricing redirects here)",
+          "url": "https://devin.ai/pricing"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Agent usage",
+              "value": "Light quota to code with agents; limited model availability",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            },
+            {
+              "metric": "Tab completions and inline edits",
+              "value": "Unlimited",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "priceUsd": 20,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Agent usage",
+              "value": "Increased quotas, including access to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading open source models; full model availability; refreshed daily and weekly",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            },
+            {
+              "metric": "SWE-2 model",
+              "value": "Free use of SWE-2",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            },
+            {
+              "metric": "Cloud agents",
+              "value": "Devin Cloud included",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Purchased at API pricing",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "max",
+          "name": "Max",
+          "priceUsd": 200,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Agent usage",
+              "value": "Significantly higher quotas than Pro",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Purchased at API pricing",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "teams",
+          "name": "Teams",
+          "priceUsd": 40,
+          "priceNote": "$80/month for the team plan plus $40/month per full dev seat, up to 200 users",
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "usage allowance",
+          "limits": [
+            {
+              "metric": "Agent usage",
+              "value": "Everything in Pro; each full user includes their own generous quota and access to Devin Desktop",
+              "window": "7d",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            },
+            {
+              "metric": "Members",
+              "value": "Up to 200 users",
+              "numeric": 200,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance",
+          "priceNote": "Contact sales",
+          "limits": [
+            {
+              "metric": "Agent usage",
+              "value": "Let's talk (custom)",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            },
+            {
+              "metric": "Members",
+              "value": "Unlimited",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://devin.ai/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "replit",
+      "name": "Replit",
+      "vendor": "Replit",
+      "kind": "AI app builder (Replit Agent)",
+      "url": "https://replit.com",
+      "page": "https://getstackversus.com/limits/replit",
+      "metering": "Replit AI features use usage-based billing. All subscribers get one-time free Agent checkpoints. Core subscribers get monthly credits, and Pro subscribers get tiered monthly credits that roll over for two months. These credits cover Agent and other Replit cloud services such as published apps, storage, databases, network transfer and Replit AI Integrations. Free Mode covers no-cost everyday Agent work for Core and Pro within an allowance that refreshes every five hours. Starter has a daily cap. Paid modes (Power, Max, and Auto inside them) use effort-based pricing: Agent charges one checkpoint per request, priced by complexity, and asks for confirmation before paid work starts. Third-party APIs that Agent uses are billed at the provider's public API rate from Replit credits. Core and Pro can buy credit packs ($100, $300 for $290, $500 for $480, $1,000 for $950), which expire after six months and do not roll over. Starter gets daily Agent credits up to a monthly cap, plus monthly credits for cloud usage.",
+      "sources": {
+        "pricing": {
+          "name": "Replit pricing",
+          "url": "https://replit.com/pricing"
+        },
+        "ai": {
+          "name": "Replit docs: AI billing",
+          "url": "https://docs.replit.com/billing/ai-billing"
+        },
+        "pro": {
+          "name": "Replit docs: Replit Pro",
+          "url": "https://docs.replit.com/billing/plans/replit-pro"
+        },
+        "starter": {
+          "name": "Replit docs: Starter plan",
+          "url": "https://docs.replit.com/billing/plans/starter-plan"
+        },
+        "core": {
+          "name": "Core",
+          "url": "https://docs.replit.com/billing/plans/replit-core.md"
+        },
+        "modes": {
+          "name": "Modes",
+          "url": "https://docs.replit.com/features/agent/agent-modes.md"
+        },
+        "spend": {
+          "name": "Spend",
+          "url": "https://docs.replit.com/billing/managing-spend.md"
+        }
+      },
+      "plans": [
+        {
+          "id": "starter",
+          "name": "Starter",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "priceNote": "Not listed on the pricing page; the price comes from the Starter plan docs.",
+          "limits": [
+            {
+              "metric": "Agent credits",
+              "value": "Daily Agent credits that reset each day, up to a monthly cap; no amounts stated",
+              "window": "day",
+              "published": false,
+              "source": "starter",
+              "sourceUrl": "https://docs.replit.com/billing/plans/starter-plan"
+            },
+            {
+              "metric": "Free Mode",
+              "value": "Free Mode with a daily cap; no amount stated",
+              "window": "day",
+              "published": false,
+              "source": "ai",
+              "sourceUrl": "https://docs.replit.com/billing/ai-billing"
+            },
+            {
+              "metric": "Cloud usage credits",
+              "value": "Monthly credits for production databases, object storage and publishing; no amount stated",
+              "window": "month",
+              "published": false,
+              "source": "starter",
+              "sourceUrl": "https://docs.replit.com/billing/plans/starter-plan"
+            },
+            {
+              "metric": "Published apps",
+              "value": "1 free published app, taken down after 30 days",
+              "numeric": 1,
+              "published": true,
+              "source": "starter",
+              "sourceUrl": "https://docs.replit.com/billing/plans/starter-plan"
+            },
+            {
+              "metric": "Collaboration seats",
+              "value": "0",
+              "numeric": 0,
+              "published": true,
+              "source": "ai",
+              "sourceUrl": "https://docs.replit.com/billing/ai-billing"
+            },
+            {
+              "metric": "Active background tasks",
+              "value": "0",
+              "numeric": 0,
+              "published": true,
+              "source": "ai",
+              "sourceUrl": "https://docs.replit.com/billing/ai-billing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "core",
+          "name": "Core",
+          "priceUsd": 20,
+          "annualMonthlyUsd": 18,
+          "unit": "credits",
+          "annualNote": "Billed annually; the pricing page says \"Up to 10% off\" for yearly billing.",
+          "perSeat": false,
+          "limits": [
+            {
+              "metric": "Free Mode chat",
+              "value": "Up to 30 hours of chat on Free Mode",
+              "window": "1mo",
+              "numeric": 30,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Free Mode projects",
+              "value": "Up to 60 projects on Free Mode",
+              "window": "1mo",
+              "numeric": 60,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Free Mode allowance refresh",
+              "value": "Free Mode allowance refreshes every five hours (Core and Pro)",
+              "window": "5h",
+              "published": true,
+              "source": "modes",
+              "sourceUrl": "https://docs.replit.com/features/agent/agent-modes.md"
+            },
+            {
+              "metric": "Credits",
+              "value": "$20 towards more powerful models",
+              "window": "month",
+              "numeric": 20,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Collaboration seats",
+              "value": "5",
+              "numeric": 5,
+              "published": true,
+              "source": "ai",
+              "sourceUrl": "https://docs.replit.com/billing/ai-billing"
+            },
+            {
+              "metric": "Active background tasks",
+              "value": "1",
+              "numeric": 1,
+              "published": true,
+              "source": "ai",
+              "sourceUrl": "https://docs.replit.com/billing/ai-billing"
+            },
+            {
+              "metric": "Published apps",
+              "value": "Unlimited",
+              "published": true,
+              "source": "ai",
+              "sourceUrl": "https://docs.replit.com/billing/ai-billing"
+            },
+            {
+              "metric": "Workspaces",
+              "value": "Unlimited workspaces",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Database rollback",
+              "value": "Standard 7 days (Pro gets 28)",
+              "numeric": 7,
+              "published": true,
+              "source": "pro",
+              "sourceUrl": "https://docs.replit.com/billing/plans/replit-pro"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "priceUsd": 100,
+          "annualMonthlyUsd": 90,
+          "unit": "credits",
+          "priceNote": "Price for the $100-credit tier. Higher tiers bill at $215, $425, $825 and $2,000 a month on annual billing. The fetched text does not show which credit amounts those tiers carry.",
+          "annualNote": "Billed annually (\"Save $10\" on the $100 tier).",
+          "perSeat": false,
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "$100 towards most powerful models",
+              "window": "month",
+              "numeric": 100,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Free Mode usage",
+              "value": "\"Even more Free Mode usage\" than Core; no hours or project count stated. Allowance refreshes every five hours.",
+              "window": "5h",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Collaboration seats",
+              "value": "Up to 15 collaborators",
+              "numeric": 15,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Active background tasks",
+              "value": "Run up to 10 tasks simultaneously",
+              "numeric": 10,
+              "published": true,
+              "source": "pro",
+              "sourceUrl": "https://docs.replit.com/billing/plans/replit-pro"
+            },
+            {
+              "metric": "Credit rollover",
+              "value": "Unused credits roll over for two months",
+              "published": true,
+              "source": "pro",
+              "sourceUrl": "https://docs.replit.com/billing/plans/replit-pro"
+            },
+            {
+              "metric": "Database rollback",
+              "value": "Up to 28 days",
+              "numeric": 28,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Published apps",
+              "value": "Unlimited",
+              "published": true,
+              "source": "ai",
+              "sourceUrl": "https://docs.replit.com/billing/ai-billing"
+            },
+            {
+              "metric": "Per-user fees",
+              "value": "No per-user fees; up to 15 builders share pooled credits",
+              "published": true,
+              "source": "pro",
+              "sourceUrl": "https://docs.replit.com/billing/plans/replit-pro"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "priceNote": "Custom; contact sales",
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "Custom; contact sales",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://replit.com/pricing"
+            },
+            {
+              "metric": "Per-user spend limits",
+              "value": "Admins can set a different spend limit for each member",
+              "published": true,
+              "source": "spend",
+              "sourceUrl": "https://docs.replit.com/billing/managing-spend.md"
+            },
+            {
+              "metric": "Agent mode",
+              "value": "Enterprise uses one Auto mode instead of Free Mode",
+              "published": true,
+              "source": "modes",
+              "sourceUrl": "https://docs.replit.com/features/agent/agent-modes.md"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "vendor": "Lovable",
+      "kind": "AI app builder",
+      "url": "https://lovable.dev",
+      "page": "https://getstackversus.com/limits/lovable",
+      "metering": "Credits. Lovable uses one credit balance for building, chatting, hosting/running the built-in backend (Cloud), AI features in deployed apps, and Lovable-managed connectors. Usage-specific grants are used first: a daily chat allowance (temporary pricing through October 31, 2026; no figure published), 5 daily build credits (capped at 30 per calendar month on Free), and monthly grants of 20 Cloud, 4 AI and 1 connector credit on Free, Pro and Business. Pro and Business add monthly plan credits chosen by tier (100 to 10,000 per month); plan credit rate is $0.25 per credit on Pro and $0.50 on Business. Monthly plan credits roll over and expire 2 months after issue on monthly plans (1 month after the annual period ends on annual plans); daily grants expire at end of day; top-up credits ($0.30/credit Pro, $0.60/credit Business) last 12 months. Enterprise has volume-based, contract-set credits with no daily or monthly grants.",
+      "sources": {
+        "pricing": {
+          "name": "Lovable pricing",
+          "url": "https://lovable.dev/pricing"
+        },
+        "credits": {
+          "name": "Lovable docs: plans and credits",
+          "url": "https://docs.lovable.dev/introduction/plans-and-credits"
+        },
+        "plans": {
+          "name": "Lovable docs: subscription plans",
+          "url": "https://docs.lovable.dev/introduction/subscription-plans"
+        },
+        "topups": {
+          "name": "Topups",
+          "url": "https://docs.lovable.dev/introduction/credit-top-ups.md"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "url": "https://lovable.dev/enterprise-landing"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "limits": [
+            {
+              "metric": "Daily chat allowance",
+              "value": "Included",
+              "window": "day",
+              "published": false,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Daily build credits",
+              "value": "5 per day, up to 30 per month",
+              "window": "day",
+              "numeric": 5,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Cloud credits",
+              "value": "20 per month",
+              "window": "month",
+              "numeric": 20,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "AI credits",
+              "value": "4 per month",
+              "window": "month",
+              "numeric": 4,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Connector credits",
+              "value": "1 per month",
+              "window": "month",
+              "numeric": 1,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Domains",
+              "value": "5 lovable.app domains",
+              "numeric": 5,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://lovable.dev/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "priceUsd": 25,
+          "annualMonthlyUsd": 21,
+          "annualNote": "100-credit tier at $250 a year",
+          "unit": "credits",
+          "limits": [
+            {
+              "metric": "Plan credits",
+              "value": "100 per month at $25; 200 at $50, 400 at $100, 800 at $200, 1,200 at $294, 2,000 at $480, 3,000 at $705, 4,000 at $920, 5,000 at $1,125, 7,500 at $1,688, 10,000 at $2,250",
+              "window": "month",
+              "numeric": 100,
+              "published": true,
+              "source": "plans",
+              "sourceUrl": "https://docs.lovable.dev/introduction/subscription-plans"
+            },
+            {
+              "metric": "Daily chat allowance",
+              "value": "Included, larger than Free",
+              "window": "day",
+              "published": false,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Daily build credits",
+              "value": "5 per day, no monthly cap",
+              "window": "day",
+              "numeric": 5,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Cloud credits",
+              "value": "20 per month",
+              "window": "month",
+              "numeric": 20,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "AI credits",
+              "value": "4 per month",
+              "window": "month",
+              "numeric": 4,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Connector credits",
+              "value": "1 per month",
+              "window": "month",
+              "numeric": 1,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Credit rate",
+              "value": "$0.25 per credit",
+              "numeric": 0.25,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Top-up price",
+              "value": "$15 per 50 credits ($0.30 per credit)",
+              "numeric": 0.3,
+              "published": true,
+              "source": "topups",
+              "sourceUrl": "https://docs.lovable.dev/introduction/credit-top-ups.md"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "priceUsd": 50,
+          "annualMonthlyUsd": 42,
+          "annualNote": "100-credit tier at $500 a year",
+          "unit": "credits",
+          "limits": [
+            {
+              "metric": "Plan credits",
+              "value": "100 per month at $50; 200 at $100, 400 at $200, 800 at $400, 1,200 at $588, 2,000 at $960, 3,000 at $1,410, 4,000 at $1,840, 5,000 at $2,250, 7,500 at $3,300, 10,000 at $4,300",
+              "window": "month",
+              "numeric": 100,
+              "published": true,
+              "source": "plans",
+              "sourceUrl": "https://docs.lovable.dev/introduction/subscription-plans"
+            },
+            {
+              "metric": "Daily chat allowance",
+              "value": "Included, larger than Free",
+              "window": "day",
+              "published": false,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Daily build credits",
+              "value": "5 per day, no monthly cap",
+              "window": "day",
+              "numeric": 5,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Cloud credits",
+              "value": "20 per month",
+              "window": "month",
+              "numeric": 20,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "AI credits",
+              "value": "4 per month",
+              "window": "month",
+              "numeric": 4,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Connector credits",
+              "value": "1 per month",
+              "window": "month",
+              "numeric": 1,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Credit rate",
+              "value": "$0.50 per credit",
+              "numeric": 0.5,
+              "published": true,
+              "source": "credits",
+              "sourceUrl": "https://docs.lovable.dev/introduction/plans-and-credits"
+            },
+            {
+              "metric": "Top-up price",
+              "value": "$30 per 50 credits ($0.60 per credit)",
+              "numeric": 0.6,
+              "published": true,
+              "source": "topups",
+              "sourceUrl": "https://docs.lovable.dev/introduction/credit-top-ups.md"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "priceNote": "Contact sales",
+          "limits": [
+            {
+              "metric": "Plan credits",
+              "value": "Volume-based; Enterprise credit terms are set by contract",
+              "published": false,
+              "source": "plans",
+              "sourceUrl": "https://docs.lovable.dev/introduction/subscription-plans"
+            },
+            {
+              "metric": "Daily grants and monthly Cloud/AI grants",
+              "value": "Not included: no daily chat allowance, daily build credits, or monthly Cloud and AI grants",
+              "published": false,
+              "source": "plans",
+              "sourceUrl": "https://docs.lovable.dev/introduction/subscription-plans"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "v0",
+      "name": "v0",
+      "vendor": "Vercel",
+      "kind": "AI app builder",
+      "url": "https://v0.app",
+      "page": "https://getstackversus.com/limits/v0",
+      "metering": "Usage is measured in tokens and billed as dollar credits at per-model rates listed on the pricing page, in US dollars per one million tokens: v0 Mini $0.20 input / $0.25 cache write / $0.02 cache read / $1.20 output; v0 Pro $2 / $2.50 / $0.20 / $10; v0 Max $5 / $6.25 / $0.50 / $25; v0 Max Fast $10 / $12.50 / $1 / $50. Per the vendor: \"Input tokens are measured based on what you send and output tokens are measured based on what v0 returns. Every time you send a prompt or receive output from v0, it is broken into tokens and measured. Pricing is based on how many of each are processed.\" Plus and Business include $30 of monthly credits per user plus $2 of free daily credits on login per user, and teams can \"Purchase additional credits outside of your monthly usage shared across your team\". The Free plan shows a 7 message/day limit. Prices are in USD and exclude taxes.",
+      "sources": {
+        "pricing": {
+          "name": "v0 plans and pricing",
+          "url": "https://v0.app/pricing"
+        },
+        "faq": {
+          "name": "Faq",
+          "url": "https://v0.app/faq"
+        },
+        "students": {
+          "name": "Students",
+          "url": "https://v0.app/students"
+        },
+        "docs": {
+          "name": "Docs",
+          "url": "https://v0.app/docs"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "messages",
+          "limits": [
+            {
+              "metric": "Messages",
+              "value": "7 message/day limit",
+              "window": "day",
+              "numeric": 7,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Included credits",
+              "value": "Not stated on the pricing page; the card lists only \"Free access to v0\"",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "plus",
+          "name": "Plus",
+          "priceUsd": 30,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "seatNote": "page shows $90 struck through next to the $30 price",
+          "unit": "credits",
+          "priceNote": "Page shows $90 struck through next to $30 (rendered as \"$30$90/user/month\"). The page does not say whether $30 is a promotion.",
+          "annualNote": "No annual pricing shown",
+          "limits": [
+            {
+              "metric": "Included credits",
+              "value": "$30 of included monthly credits per user",
+              "window": "month",
+              "numeric": 30,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Daily credits",
+              "value": "$2 of free daily credits on login per user",
+              "window": "day",
+              "numeric": 2,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Models",
+              "value": "Access to all models",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Additional credits",
+              "value": "Purchase additional credits outside of your monthly usage shared across your team",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "priceUsd": 100,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "credits",
+          "annualNote": "No annual pricing shown",
+          "limits": [
+            {
+              "metric": "Included credits",
+              "value": "$30 of included monthly credits per user",
+              "window": "month",
+              "numeric": 30,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Daily credits",
+              "value": "$2 of free daily credits on login per user",
+              "window": "day",
+              "numeric": 2,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Models",
+              "value": "Access to all models",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Training",
+              "value": "Training opt-out by default",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Additional credits",
+              "value": "Purchase additional credits outside of your monthly usage shared across your team",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "priceNote": "Custom; contact sales",
+          "limits": [
+            {
+              "metric": "Included credits",
+              "value": "Not stated; price shown as \"Custom\"",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Priority access",
+              "value": "Priority access for better performance and no queues",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Training",
+              "value": "Your data is never used for training",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Security",
+              "value": "SAML SSO; Role-based access control",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            },
+            {
+              "metric": "Support",
+              "value": "Guaranteed customer support SLAs",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://v0.app/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "vendor": "StackBlitz",
+      "kind": "AI app builder",
+      "url": "https://bolt.new",
+      "page": "https://getstackversus.com/limits/bolt",
+      "metering": "Bolt meters AI usage in tokens; the Help Center says 'Bolt consumes tokens when it reads, thinks about, and builds your project' and most usage comes from syncing project files, so larger projects use more tokens per message. Each plan has a monthly token allocation. Free: 1M tokens/month plus a separate 300K daily cap; free tokens reset on the 1st of each calendar month and do not roll over. Paid plans have no daily limit; tokens reset on the subscription renewal date, and unused tokens roll over and stay valid for two months from the start of the billing cycle in which they were granted (consumed first-in, first-out). Pro and Teams are sold in tiers chosen with a 'Monthly tokens' slider (entry tier 10M tokens); Teams is priced per member and each paid member gets their own allocation (tokens are not shared). Annual plans still grant tokens monthly and are billed up front; the pricing page advertises 'Save up to 28%' and a Help Center billing example lists the Pro 10M annual plan at $216/year. Token reloads are available on the highest monthly Pro tier or any annual Pro plan. Published sites are also metered for hosting bandwidth and web requests (Free 10 GB + 333,333 requests/month with a hard stop; paid 30 GB + 1M requests/month with optional pay-as-you-go). Enterprise has unlimited tokens priced by consumption on a custom annual contract.",
+      "sources": {
+        "pricing": {
+          "name": "Bolt pricing",
+          "url": "https://bolt.new/pricing"
+        },
+        "help_home": {
+          "name": "Help Home",
+          "url": "https://support.bolt.new"
+        },
+        "help_index": {
+          "name": "Help Index",
+          "url": "https://support.bolt.new/llms.txt"
+        },
+        "help_tokens": {
+          "name": "Help Tokens",
+          "url": "https://support.bolt.new/account/tokens.md"
+        },
+        "help_billing": {
+          "name": "Help Billing",
+          "url": "https://support.bolt.new/account/billing.md"
+        },
+        "help_hosting_plans": {
+          "name": "Help Hosting Plans",
+          "url": "https://support.bolt.new/bolt-cloud/hosting/plans.md"
+        },
+        "help_teams_billing": {
+          "name": "Help Teams Billing",
+          "url": "https://support.bolt.new/teams/billing-invoices.md"
+        },
+        "help_upload_files": {
+          "name": "Help Upload Files",
+          "url": "https://support.bolt.new/building/upload-files.md"
+        },
+        "help_bolt_forge": {
+          "name": "Help Bolt Forge",
+          "url": "https://support.bolt.new/account/bolt-forge.md"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "tokens",
+          "limits": [
+            {
+              "metric": "Tokens",
+              "value": "1M per month",
+              "window": "month",
+              "numeric": 1000000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Daily tokens",
+              "value": "300K per day",
+              "window": "day",
+              "numeric": 300000,
+              "published": true,
+              "source": "help_tokens",
+              "sourceUrl": "https://support.bolt.new/account/tokens.md"
+            },
+            {
+              "metric": "Token reset",
+              "value": "Monthly tokens reset on the 1st of each calendar month; daily cap resets every day without carry-over",
+              "published": true,
+              "source": "help_tokens",
+              "sourceUrl": "https://support.bolt.new/account/tokens.md"
+            },
+            {
+              "metric": "Token rollover",
+              "value": "Unused tokens do not roll over",
+              "published": true,
+              "source": "help_tokens",
+              "sourceUrl": "https://support.bolt.new/account/tokens.md"
+            },
+            {
+              "metric": "Web requests",
+              "value": "333,333 per month (hard limit)",
+              "window": "month",
+              "numeric": 333333,
+              "published": true,
+              "source": "help_hosting_plans",
+              "sourceUrl": "https://support.bolt.new/bolt-cloud/hosting/plans.md"
+            },
+            {
+              "metric": "Hosting bandwidth",
+              "value": "10 GB per month (hard limit)",
+              "window": "month",
+              "numeric": 10,
+              "published": true,
+              "source": "help_hosting_plans",
+              "sourceUrl": "https://support.bolt.new/bolt-cloud/hosting/plans.md"
+            },
+            {
+              "metric": "File uploads",
+              "value": "10MB per file",
+              "numeric": 10,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Attachments per message",
+              "value": "5 files, up to 10 MB each",
+              "numeric": 5,
+              "published": true,
+              "source": "help_upload_files",
+              "sourceUrl": "https://support.bolt.new/building/upload-files.md"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "lite",
+          "name": "Lite",
+          "priceUsd": 9,
+          "priceNote": "Waitlist-only standalone plan (Bolt Forge open-source models only); not listed on bolt.new/pricing.",
+          "annualMonthlyUsd": null,
+          "unit": "usage allowance (Forge)",
+          "limits": [
+            {
+              "metric": "Forge usage",
+              "value": "Forge allowance",
+              "window": "month",
+              "published": false,
+              "source": "help_bolt_forge",
+              "sourceUrl": "https://support.bolt.new/account/bolt-forge.md"
+            },
+            {
+              "metric": "Daily limit",
+              "value": "There's no daily limit to your Forge usage.",
+              "published": true,
+              "source": "help_bolt_forge",
+              "sourceUrl": "https://support.bolt.new/account/bolt-forge.md"
+            },
+            {
+              "metric": "Extra usage",
+              "value": "Cannot buy extra usage",
+              "published": true,
+              "source": "help_bolt_forge",
+              "sourceUrl": "https://support.bolt.new/account/bolt-forge.md"
+            },
+            {
+              "metric": "Attachments per message",
+              "value": "20 files, up to 100 MB each",
+              "numeric": 20,
+              "published": true,
+              "source": "help_bolt_forge",
+              "sourceUrl": "https://support.bolt.new/account/bolt-forge.md"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "priceUsd": 25,
+          "annualMonthlyUsd": 18,
+          "annualNote": "Pricing page: 'Save up to 28%' with no annual amount shown. $18/month derived from Help Center billing example 'Pro 10M annual plan ... for $216/year' (also 'Pro 26M annual plan at $540/year'). Human should confirm example figures are acceptable as a source.",
+          "unit": "tokens",
+          "priceNote": "Entry tier (10M tokens). Higher tiers chosen via a 'Monthly tokens' slider; Help Center examples cite Pro 50 at $50 (26M tokens) and Pro 100 at $100 (55M tokens). Plus applicable taxes.",
+          "limits": [
+            {
+              "metric": "Tokens",
+              "value": "Starts at 10M per month (10M on the $25 tier)",
+              "window": "month",
+              "numeric": 10000000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Daily tokens",
+              "value": "No Limit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Token rollover",
+              "value": "Unused tokens roll over, valid for two months from the start of the billing cycle in which they were granted",
+              "published": true,
+              "source": "help_tokens",
+              "sourceUrl": "https://support.bolt.new/account/tokens.md"
+            },
+            {
+              "metric": "Web requests",
+              "value": "1M per month (pay-as-you-go available)",
+              "window": "month",
+              "numeric": 1000000,
+              "published": true,
+              "source": "help_hosting_plans",
+              "sourceUrl": "https://support.bolt.new/bolt-cloud/hosting/plans.md"
+            },
+            {
+              "metric": "Hosting bandwidth",
+              "value": "30 GB per month (pay-as-you-go available)",
+              "window": "month",
+              "numeric": 30,
+              "published": true,
+              "source": "help_hosting_plans",
+              "sourceUrl": "https://support.bolt.new/bolt-cloud/hosting/plans.md"
+            },
+            {
+              "metric": "File uploads",
+              "value": "100MB per file",
+              "numeric": 100,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Attachments per message",
+              "value": "20 files, up to 100 MB each",
+              "numeric": 20,
+              "published": true,
+              "source": "help_upload_files",
+              "sourceUrl": "https://support.bolt.new/building/upload-files.md"
+            },
+            {
+              "metric": "Token reloads",
+              "value": "Available on the highest individual monthly Pro plan or any annual Pro plan; price not published",
+              "published": false,
+              "source": "help_tokens",
+              "sourceUrl": "https://support.bolt.new/account/tokens.md"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "teams",
+          "name": "Teams",
+          "priceUsd": 30,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "tokens",
+          "priceNote": "Per member, entry tier; higher token tiers selectable via slider. Plus applicable taxes.",
+          "annualNote": "Yearly toggle advertises up to 28% off; no Teams annual amount found on fetched pages.",
+          "limits": [
+            {
+              "metric": "Tokens",
+              "value": "Starts at 10M per member per month; tokens not shared among members",
+              "window": "month",
+              "numeric": 10000000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Daily tokens",
+              "value": "No Limit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Token rollover",
+              "value": "Included; rollover tokens stay linked to the member who accrued them",
+              "published": true,
+              "source": "help_tokens",
+              "sourceUrl": "https://support.bolt.new/account/tokens.md"
+            },
+            {
+              "metric": "Web requests",
+              "value": "Up to 1M per month",
+              "window": "month",
+              "numeric": 1000000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Hosting bandwidth",
+              "value": "Pro hosting (30 GB per month) included with every paid subscription",
+              "window": "month",
+              "numeric": 30,
+              "published": true,
+              "source": "help_hosting_plans",
+              "sourceUrl": "https://support.bolt.new/bolt-cloud/hosting/plans.md"
+            },
+            {
+              "metric": "File uploads",
+              "value": "100MB per file",
+              "numeric": 100,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Attachments per message",
+              "value": "20 files, up to 100 MB each",
+              "numeric": 20,
+              "published": true,
+              "source": "help_upload_files",
+              "sourceUrl": "https://support.bolt.new/building/upload-files.md"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "tokens",
+          "priceNote": "Custom annual contract, billed by consumption",
+          "limits": [
+            {
+              "metric": "Tokens",
+              "value": "Unlimited tokens, priced by consumption",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Daily tokens",
+              "value": "No Limit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "Web requests",
+              "value": "Custom",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            },
+            {
+              "metric": "File uploads",
+              "value": "Custom",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://bolt.new/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "vendor": "Amazon Web Services",
+      "kind": "AI IDE + coding agent",
+      "url": "https://kiro.dev",
+      "page": "https://getstackversus.com/limits/kiro",
+      "metering": "Kiro meters usage in credits per user per month. A credit is a unit of work in response to user prompts; simple prompts can cost less than 1 credit, complex ones (e.g. spec tasks) more, and models consume credits at different multipliers relative to Auto (1.0x). Credits are metered to two decimal places (minimum 0.01 credits). Prompts in vibe or spec mode, spec refinement, task execution, agent hook execution and workflows all consume credits, across the IDE, CLI, Web and other interfaces. Usage limits reset at the start of each billing month and unused plan credits do not roll over; paid subscriptions are processed on the 1st of each calendar month. Paid individual plans (social login / AWS Builder ID) can buy add-on credits at $0.04 each, billed immediately, in packs from $5 (125 credits) up to $100, with up to 5 packs at a time; plan credits are used first, and add-on credits roll over until they expire 12 months after purchase. Free tier cannot buy add-on credits. Enterprise (billed through AWS) uses the same Pro/Pro+/Pro Max/Power tiers; admins can enable overages billed at $0.04 per credit at month-end, disabled by default. New users get $20 credited toward their first paid subscription (social login or Builder ID). AWS GovCloud (US) pricing is approximately 20% higher and has no Free tier.",
+      "sources": {
+        "pricing": {
+          "name": "Kiro pricing",
+          "url": "https://kiro.dev/pricing/"
+        },
+        "billing": {
+          "name": "Billing",
+          "url": "https://kiro.dev/docs/billing/"
+        },
+        "addon": {
+          "name": "Addon",
+          "url": "https://kiro.dev/docs/billing/add-on-credits/"
+        },
+        "enterprise_billing": {
+          "name": "Enterprise Billing",
+          "url": "https://kiro.dev/docs/enterprise/billing/"
+        },
+        "models": {
+          "name": "Models",
+          "url": "https://kiro.dev/docs/models/"
+        },
+        "available_models": {
+          "name": "Available Models",
+          "url": "https://kiro.dev/docs/models/available-models/"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "url": "https://kiro.dev/enterprise/"
+        }
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "50 per month",
+              "window": "month",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Models",
+              "value": "Open weight models (e.g. Qwen3 Coder Next, DeepSeek 3.2, MiniMax M2.1) and Claude Sonnet 4.5 for users who signed up with social login or AWS Builder ID",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Rate limits",
+              "value": "Access is subject to rate limits",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Add-on credits",
+              "value": "Not available; must wait for monthly reset",
+              "published": true,
+              "source": "addon",
+              "sourceUrl": "https://kiro.dev/docs/billing/add-on-credits/"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "priceUsd": 20,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "credits",
+          "priceNote": "Per user per month; excludes taxes. AWS GovCloud (US) pricing is approximately 20% higher. Sold for teams from 2 to 500.",
+          "annualNote": "No annual pricing published on the pricing page.",
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "1,000 per month",
+              "window": "month",
+              "numeric": 1000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Overage",
+              "value": "$0.04 per add-on credit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Add-on credit packs",
+              "value": "From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase",
+              "published": true,
+              "source": "addon",
+              "sourceUrl": "https://kiro.dev/docs/billing/add-on-credits/"
+            },
+            {
+              "metric": "Models",
+              "value": "Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro-plus",
+          "name": "Pro+",
+          "priceUsd": 40,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "credits",
+          "priceNote": "Per user per month; excludes taxes. AWS GovCloud (US) pricing is approximately 20% higher. Sold for teams from 2 to 500.",
+          "annualNote": "No annual pricing published on the pricing page.",
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "2,000 per month",
+              "window": "month",
+              "numeric": 2000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Overage",
+              "value": "$0.04 per add-on credit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Add-on credit packs",
+              "value": "From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase",
+              "published": true,
+              "source": "addon",
+              "sourceUrl": "https://kiro.dev/docs/billing/add-on-credits/"
+            },
+            {
+              "metric": "Models",
+              "value": "Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "pro-max",
+          "name": "Pro Max",
+          "priceUsd": 100,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "credits",
+          "priceNote": "Per user per month; excludes taxes. AWS GovCloud (US) pricing is approximately 20% higher. Sold for teams from 2 to 500.",
+          "annualNote": "No annual pricing published on the pricing page.",
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "5,000 per month",
+              "window": "month",
+              "numeric": 5000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Overage",
+              "value": "$0.04 per add-on credit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Add-on credit packs",
+              "value": "From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase",
+              "published": true,
+              "source": "addon",
+              "sourceUrl": "https://kiro.dev/docs/billing/add-on-credits/"
+            },
+            {
+              "metric": "Models",
+              "value": "Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "power",
+          "name": "Power",
+          "priceUsd": 200,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "credits",
+          "priceNote": "Per user per month; excludes taxes. AWS GovCloud (US) pricing is approximately 20% higher. Sold for teams from 2 to 500.",
+          "annualNote": "No annual pricing published on the pricing page.",
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "10,000 per month",
+              "window": "month",
+              "numeric": 10000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Overage",
+              "value": "$0.04 per add-on credit",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Add-on credit packs",
+              "value": "From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase",
+              "published": true,
+              "source": "addon",
+              "sourceUrl": "https://kiro.dev/docs/billing/add-on-credits/"
+            },
+            {
+              "metric": "Models",
+              "value": "Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "credits",
+          "priceNote": "No separate Enterprise price. Enterprise subscribes users to the Pro/Pro+/Pro Max/Power tiers, billed monthly per user through AWS. Organizations larger than 500 users or with custom requirements: contact sales.",
+          "perSeat": true,
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "Per assigned tier: Pro 1,000; Pro+ 2,000; Pro Max 5,000; Power 10,000",
+              "window": "month",
+              "published": true,
+              "source": "enterprise_billing",
+              "sourceUrl": "https://kiro.dev/docs/enterprise/billing/"
+            },
+            {
+              "metric": "Overage",
+              "value": "$0.04 per credit, billed at month-end; disabled by default, admins must enable",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Free tier",
+              "value": "Not available for Enterprise",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "amp",
+      "name": "Amp",
+      "vendor": "Sourcegraph",
+      "kind": "Coding agent",
+      "url": "https://ampcode.com",
+      "page": "https://getstackversus.com/limits/amp",
+      "metering": "Amp tiers cover Amp-hosted orb time (remote machines where agents run) and, on paid tiers, included agent usage. The vendor says: 'Paid tiers include agent usage, orb usage, and every Amp product feature. Included usage resets at the end of each monthly billing period and does not roll over.' Orbs are billed by the minute at size-based hourly rates ($0.08/hour for a1.tiny up to $2.13/hour for a1.3xlarge). An orb pauses 5 minutes after the agent stops working or 20 minutes after your last interaction, whichever comes later, and a paused orb costs nothing. Larger orbs use the minute allowance faster. Model tokens can come from linked ChatGPT, Claude or other subscriptions, or from your own API keys (BYOK), with 'No Amp token fees or limits' on Hobby, Individual and Teams (the free-agent announcement makes an exception for Enterprise). Once included agent usage runs out, you can buy paid credits, charged at the provider's API price with no markup for individuals and non-enterprise workspaces. Purchased credits expire twelve months after purchase. Self-hosted orbs are free on Hobby, Individual and Teams. Since October 29, 2026, Enterprise pays 100% of the standard per-minute price for them.",
+      "sources": {
+        "pricing": {
+          "name": "Amp pricing",
+          "url": "https://ampcode.com/pricing"
+        },
+        "docs_pricing": {
+          "name": "Docs Pricing",
+          "url": "https://ampcode.com/docs/pricing"
+        },
+        "orb_sizes": {
+          "name": "Orb Sizes",
+          "url": "https://ampcode.com/docs/orbs/sizes-and-costs"
+        },
+        "what_are_orbs": {
+          "name": "What Are Orbs",
+          "url": "https://ampcode.com/what-are-orbs"
+        },
+        "free_agent": {
+          "name": "Free Agent",
+          "url": "https://ampcode.com/news/free-agent"
+        },
+        "edu": {
+          "name": "Edu",
+          "url": "https://ampcode.com/news/edu-discount"
+        },
+        "self_hosted_news": {
+          "name": "Self Hosted News",
+          "url": "https://ampcode.com/news/self-hosted-orbs"
+        },
+        "personal_self_hosted": {
+          "name": "Personal Self Hosted",
+          "url": "https://ampcode.com/news/personal-self-hosted-orbs"
+        },
+        "chronicle": {
+          "name": "Chronicle",
+          "url": "https://ampcode.com/chronicle"
+        },
+        "docs": {
+          "name": "Docs",
+          "url": "https://ampcode.com/docs"
+        }
+      },
+      "plans": [
+        {
+          "id": "hobby",
+          "name": "Hobby",
+          "priceUsd": 0,
+          "annualMonthlyUsd": null,
+          "unit": "orb minutes (pay-as-you-go)",
+          "limits": [
+            {
+              "metric": "Hosted orb minutes",
+              "value": "Pay-as-you-go for Amp-hosted orbs, billed by the minute",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Hosted orb rate (a1.tiny, 1 CPU / 2 GB)",
+              "value": "$0.08/hour",
+              "numeric": 0.08,
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Hosted orb rate (a1.small, 2 CPU / 4 GB)",
+              "value": "$0.17/hour",
+              "numeric": 0.17,
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Hosted orb rate (a1.medium, 4 CPU / 8 GB)",
+              "value": "$0.33/hour",
+              "numeric": 0.33,
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Hosted orb rate (a1.large, 8 CPU / 16 GB)",
+              "value": "$0.66/hour",
+              "numeric": 0.66,
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Hosted orb rate (a1.xxlarge, 16 CPU / 32 GB)",
+              "value": "$1.32/hour",
+              "numeric": 1.32,
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Self-hosted orbs",
+              "value": "Unlimited, free",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Model tokens",
+              "value": "No Amp token fees or limits (bring your own subscription or keys)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Paid credits (extra model usage)",
+              "value": "Charged at provider API prices with no markup; no paid tier needed; purchased credits expire after 12 months",
+              "published": true,
+              "source": "docs_pricing",
+              "sourceUrl": "https://ampcode.com/docs/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "megawatt",
+          "name": "Individual Megawatt",
+          "priceUsd": 20,
+          "annualMonthlyUsd": null,
+          "unit": "orb minutes",
+          "limits": [
+            {
+              "metric": "Hosted orb minutes",
+              "value": "45,000 minutes of orbin' time",
+              "window": "month",
+              "numeric": 45000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Included agent (model) usage",
+              "value": "Paid tiers include agent usage; amount not stated",
+              "window": "month",
+              "published": false,
+              "source": "docs_pricing",
+              "sourceUrl": "https://ampcode.com/docs/pricing"
+            },
+            {
+              "metric": "Default orb size (personal projects)",
+              "value": "a1.small",
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Self-hosted orbs",
+              "value": "Unlimited, free",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Model tokens",
+              "value": "No Amp token fees or limits (bring your own subscription or keys)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "megawatt-edu",
+          "name": "Education (Megawatt at 50% off)",
+          "priceUsd": 10,
+          "priceNote": "For students and teachers, at ampcode.com/edu",
+          "annualMonthlyUsd": null,
+          "unit": "orb minutes + monthly credits",
+          "limits": [
+            {
+              "metric": "Monthly credits for other models",
+              "value": "$10 in credits each month",
+              "window": "month",
+              "numeric": 10,
+              "published": true,
+              "source": "edu",
+              "sourceUrl": "https://ampcode.com/news/edu-discount"
+            },
+            {
+              "metric": "Hosted orb minutes",
+              "value": "Orbs included; minute allowance not stated",
+              "published": false,
+              "source": "edu",
+              "sourceUrl": "https://ampcode.com/news/edu-discount"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "gigawatt",
+          "name": "Individual Gigawatt",
+          "priceUsd": 200,
+          "annualMonthlyUsd": null,
+          "unit": "orb minutes",
+          "limits": [
+            {
+              "metric": "Hosted orb minutes",
+              "value": "480,000 minutes of orbin' time",
+              "window": "1mo",
+              "numeric": 480000,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Included agent (model) usage",
+              "value": "Paid tiers include agent usage; amount not stated",
+              "window": "month",
+              "published": false,
+              "source": "docs_pricing",
+              "sourceUrl": "https://ampcode.com/docs/pricing"
+            },
+            {
+              "metric": "a1.3xlarge orb access (16 CPU / 44 GB, $2.13/hour)",
+              "value": "Available only to Gigawatt and Enterprise",
+              "numeric": 2.13,
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Self-hosted orbs",
+              "value": "Free on Individual plans",
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Model tokens",
+              "value": "No Amp token fees or limits (bring your own subscription or keys)",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "teams",
+          "name": "Teams",
+          "priceUsd": 0,
+          "priceNote": "No extra charge on top of member tiers",
+          "annualMonthlyUsd": null,
+          "unit": "orb minutes",
+          "limits": [
+            {
+              "metric": "Member tiers",
+              "value": "Members can be on Hobby, Megawatt or Gigawatt",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Hosted orb minutes",
+              "value": "Shared billing and pooled credits; Hobby members use pooled workspace credits for orbs pay-as-you-go",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "SAML/OIDC SSO",
+              "value": "Free for the whole workspace if at least one member is on a paid tier",
+              "published": true,
+              "source": "free_agent",
+              "sourceUrl": "https://ampcode.com/news/free-agent"
+            },
+            {
+              "metric": "Self-hosted orbs",
+              "value": "Free on Teams",
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Model tokens",
+              "value": "No Amp token fees or limits; shared BYOK & model routing",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "pooled credits",
+          "priceNote": "Custom",
+          "limits": [
+            {
+              "metric": "Hosted orb minutes",
+              "value": "Pooled credits only, no paid user seats; higher quotas and rate limits, figures not stated",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Seats",
+              "value": "Pooled credits only, no paid user seats",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://ampcode.com/pricing"
+            },
+            {
+              "metric": "Self-hosted orbs",
+              "value": "100% of standard price, billed by the minute while connected to a thread (free until October 29, 2026); volume discounts available",
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Self-hosted orb standard price (custom sizes)",
+              "value": "CPUs × $0.0504/hour + GB memory × $0.0162/hour",
+              "published": true,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            },
+            {
+              "metric": "Model tokens",
+              "value": "Exception to no BYOK token fees or limits; Enterprise terms not stated",
+              "published": false,
+              "source": "free_agent",
+              "sourceUrl": "https://ampcode.com/news/free-agent"
+            },
+            {
+              "metric": "Hosted orb pricing",
+              "value": "Shown in project settings; not public",
+              "published": false,
+              "source": "orb_sizes",
+              "sourceUrl": "https://ampcode.com/docs/orbs/sizes-and-costs"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "augment",
+      "name": "Augment Code",
+      "vendor": "Augment",
+      "kind": "Coding agent + context engine",
+      "url": "https://www.augmentcode.com",
+      "page": "https://getstackversus.com/limits/augment",
+      "metering": "Usage is measured in dollars across LLMs, Context Engine, and compute. Standard includes $20 of usage every month and Business includes $100, each for one flat monthly price with no per-seat charge. LLM model inference is billed at the provider's public API list price, plus a flat 40% service fee on LLM usage (no fee on compute); compute is Cosmos compute time. Included usage and top-ups are pooled across the whole team (up to 50 seats on Standard and Business). Beyond the included usage you top up as you go with no plan change; top-ups that are not part of the paid plan are valid 12 months after the date of purchase.",
+      "sources": {
+        "pricing": {
+          "name": "Augment Code pricing",
+          "url": "https://www.augmentcode.com/pricing"
+        },
+        "changelog": {
+          "name": "Changelog",
+          "url": "https://www.augmentcode.com/changelog"
+        },
+        "docs": {
+          "name": "Docs",
+          "url": "https://docs.augmentcode.com"
+        }
+      },
+      "plans": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "priceUsd": 20,
+          "priceNote": "$20/month flat, no per-seat charge",
+          "annualMonthlyUsd": null,
+          "unit": "usage dollars",
+          "perSeat": false,
+          "limits": [
+            {
+              "metric": "Included usage",
+              "value": "$20 per month across LLM, Context Engine and compute",
+              "window": "month",
+              "numeric": 20,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Seats",
+              "value": "Up to 50",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Concurrent sessions",
+              "value": "50",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Compute size",
+              "value": "Standard size compute",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Overage",
+              "value": "Provider API list price plus a flat 40% fee on LLM usage (no fee on compute); top up as you go",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Top-up validity",
+              "value": "12 months after purchase",
+              "numeric": 12,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "priceUsd": 100,
+          "priceNote": "$100/month flat, no per-seat charge",
+          "annualMonthlyUsd": null,
+          "unit": "usage dollars",
+          "perSeat": false,
+          "limits": [
+            {
+              "metric": "Included usage",
+              "value": "$100 per month across LLM, Context Engine and compute",
+              "window": "month",
+              "numeric": 100,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Seats",
+              "value": "Up to 50",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Concurrent sessions",
+              "value": "50",
+              "numeric": 50,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Compute size",
+              "value": "Standard size compute",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Overage",
+              "value": "Provider API list price plus a flat 40% fee on LLM usage (no fee on compute); top up as you go",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Top-up validity",
+              "value": "12 months after purchase",
+              "numeric": 12,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "priceUsd": null,
+          "annualMonthlyUsd": null,
+          "unit": "usage dollars",
+          "priceNote": "Custom; contact sales. Custom user pricing and volume-based annual discounts.",
+          "limits": [
+            {
+              "metric": "Included usage",
+              "value": "Custom usage, custom top-up, bespoke usage limits",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Seats",
+              "value": "Unlimited users",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Concurrent sessions",
+              "value": "Unlimited concurrent sessions",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            },
+            {
+              "metric": "Compute size",
+              "value": "Custom size compute, multi-region compute",
+              "published": false,
+              "source": "pricing",
+              "sourceUrl": "https://www.augmentcode.com/pricing"
+            }
+          ],
+          "checked": "2026-10-30"
+        }
+      ]
+    }
+  ]
+}
