@@ -302,9 +302,14 @@ kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Credits,"10,000 per m
 kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Overage,$0.04 per add-on credit,,,yes,https://kiro.dev/pricing/,2026-10-30
 kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Add-on credit packs,From $5 (125 credits) up to $100 per pack; up to 5 packs at a time; expire 12 months after purchase,,,yes,https://kiro.dev/docs/billing/add-on-credits/,2026-10-30
 kiro,Kiro,Amazon Web Services,power,Power,200,,yes,credits,Models,"Open weight and premium models, including Auto, Claude Sonnet 5 and Claude Opus 5; not all premium models available in all countries/regions",,,yes,https://kiro.dev/pricing/,2026-10-30
-kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Credits,"Per assigned tier: Pro 1,000; Pro+ 2,000; Pro Max 5,000; Power 10,000",month,,yes,https://kiro.dev/docs/enterprise/billing/,2026-10-30
-kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Overage,"$0.04 per credit, billed at month-end; disabled by default, admins must enable",,,yes,https://kiro.dev/pricing/,2026-10-30
-kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Free tier,Not available for Enterprise,,,yes,https://kiro.dev/pricing/,2026-10-30
+kiro,Kiro,Amazon Web Services,teams,Teams (credit pooling),20,,yes,credits,Credits,"500 included per seat per month, shared by all seat holders in the pool",month,500,yes,https://kiro.dev/pricing/,2026-11-06
+kiro,Kiro,Amazon Web Services,teams,Teams (credit pooling),20,,yes,credits,Add-on credits,"$0.04 per credit, bought by admins for the pool; expire 12 months after purchase",,,yes,https://kiro.dev/pricing/,2026-11-06
+kiro,Kiro,Amazon Web Services,teams,Teams (credit pooling),20,,yes,credits,Overage,None; credit pooling doesn't use overages,,,yes,https://kiro.dev/pricing/,2026-11-06
+kiro,Kiro,Amazon Web Services,teams,Teams (credit pooling),20,,yes,credits,Rollover,Unused included credits expire at the end of the monthly cycle,,,yes,https://kiro.dev/pricing/,2026-11-06
+kiro,Kiro,Amazon Web Services,teams,Teams (credit pooling),20,,yes,credits,Usage controls,"Admins set credit limits for individuals, groups and profiles; alerts at 80% and 100% utilization",,,yes,https://kiro.dev/pricing/,2026-11-06
+kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Credits,"Per assigned tier: Pro 1,000; Pro+ 2,000; Pro Max 5,000; Power 10,000",month,,yes,https://kiro.dev/docs/enterprise/billing/,2026-11-06
+kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Overage,"$0.04 per credit, billed at month-end; disabled by default, admins must enable",,,yes,https://kiro.dev/pricing/,2026-11-06
+kiro,Kiro,Amazon Web Services,enterprise,Enterprise,,,yes,credits,Free tier,Not available for Enterprise,,,yes,https://kiro.dev/pricing/,2026-11-06
 amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),Hosted orb minutes,"Pay-as-you-go for Amp-hosted orbs, billed by the minute",,,yes,https://ampcode.com/pricing,2026-10-30
 amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),"Hosted orb rate (a1.tiny, 1 CPU / 2 GB)",$0.08/hour,,0.08,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30
 amp,Amp,Sourcegraph,hobby,Hobby,0,,no,orb minutes (pay-as-you-go),"Hosted orb rate (a1.small, 2 CPU / 4 GB)",$0.17/hour,,0.17,yes,https://ampcode.com/docs/orbs/sizes-and-costs,2026-10-30

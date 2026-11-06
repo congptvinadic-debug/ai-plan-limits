@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-01",
+  "updated": "2026-11-06",
   "license": "CC BY 4.0, link to the tool page",
   "source": "https://getstackversus.com/limits",
   "tools": [
@@ -3267,7 +3267,7 @@
       "kind": "AI IDE + coding agent",
       "url": "https://kiro.dev",
       "page": "https://getstackversus.com/limits/kiro",
-      "metering": "Kiro meters usage in credits per user per month. A credit is a unit of work in response to user prompts; simple prompts can cost less than 1 credit, complex ones (e.g. spec tasks) more, and models consume credits at different multipliers relative to Auto (1.0x). Credits are metered to two decimal places (minimum 0.01 credits). Prompts in vibe or spec mode, spec refinement, task execution, agent hook execution and workflows all consume credits, across the IDE, CLI, Web and other interfaces. Usage limits reset at the start of each billing month and unused plan credits do not roll over; paid subscriptions are processed on the 1st of each calendar month. Paid individual plans (social login / AWS Builder ID) can buy add-on credits at $0.04 each, billed immediately, in packs from $5 (125 credits) up to $100, with up to 5 packs at a time; plan credits are used first, and add-on credits roll over until they expire 12 months after purchase. Free tier cannot buy add-on credits. Enterprise (billed through AWS) uses the same Pro/Pro+/Pro Max/Power tiers; admins can enable overages billed at $0.04 per credit at month-end, disabled by default. New users get $20 credited toward their first paid subscription (social login or Builder ID). AWS GovCloud (US) pricing is approximately 20% higher and has no Free tier.",
+      "metering": "Kiro meters usage in credits per user per month. A credit is a unit of work in response to user prompts; simple prompts can cost less than 1 credit, complex ones (e.g. spec tasks) more, and models consume credits at different multipliers relative to Auto (1.0x). Credits are metered to two decimal places (minimum 0.01 credits). Prompts in vibe or spec mode, spec refinement, task execution, agent hook execution and workflows all consume credits, across the IDE, CLI, Web and other interfaces. Usage limits reset at the start of each billing month and unused plan credits do not roll over; paid subscriptions are processed on the 1st of each calendar month. Paid individual plans (social login / AWS Builder ID) can buy add-on credits at $0.04 each, billed immediately, in packs from $5 (125 credits) up to $100, with up to 5 packs at a time; plan credits are used first, and add-on credits roll over until they expire 12 months after purchase. Free tier cannot buy add-on credits. Enterprise (billed through AWS) uses the same Pro/Pro+/Pro Max/Power tiers; admins can enable overages billed at $0.04 per credit at month-end, disabled by default. New users get $20 credited toward their first paid subscription (social login or Builder ID). AWS GovCloud (US) pricing is approximately 20% higher and has no Free tier. Teams and enterprises now default to credit pooling: $20 per seat per month, each seat adds 500 included credits to a shared pool, admins buy add-on credits for the pool at $0.04, and pooling has no overages.",
       "sources": {
         "pricing": {
           "name": "Kiro pricing",
@@ -3512,12 +3512,62 @@
           "checked": "2026-10-30"
         },
         {
+          "id": "teams",
+          "name": "Teams (credit pooling)",
+          "priceUsd": 20,
+          "annualMonthlyUsd": null,
+          "perSeat": true,
+          "unit": "credits",
+          "priceNote": "Per seat per month; excludes taxes. For teams of 2 or more; admins buy seats and assign 2 or more seats to each credit pool. Now the default pricing for team and enterprise usage.",
+          "annualNote": "No annual pricing published on the pricing page.",
+          "limits": [
+            {
+              "metric": "Credits",
+              "value": "500 included per seat per month, shared by all seat holders in the pool",
+              "window": "month",
+              "numeric": 500,
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Add-on credits",
+              "value": "$0.04 per credit, bought by admins for the pool; expire 12 months after purchase",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Overage",
+              "value": "None; credit pooling doesn't use overages",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Rollover",
+              "value": "Unused included credits expire at the end of the monthly cycle",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            },
+            {
+              "metric": "Usage controls",
+              "value": "Admins set credit limits for individuals, groups and profiles; alerts at 80% and 100% utilization",
+              "published": true,
+              "source": "pricing",
+              "sourceUrl": "https://kiro.dev/pricing/"
+            }
+          ],
+          "checked": "2026-11-06"
+        },
+        {
           "id": "enterprise",
           "name": "Enterprise",
           "priceUsd": null,
           "annualMonthlyUsd": null,
           "unit": "credits",
-          "priceNote": "No separate Enterprise price. Enterprise subscribes users to the Pro/Pro+/Pro Max/Power tiers, billed monthly per user through AWS. Organizations larger than 500 users or with custom requirements: contact sales.",
+          "priceNote": "Bought and billed through AWS. Credit pooling (the Teams plan, $20 per seat per month) is now the default for team and enterprise usage; existing Enterprise customers on Pro/Pro+/Pro Max/Power subscriptions can keep those tiers and overages. Organizations larger than 500 users or with custom requirements: contact sales.",
           "perSeat": true,
           "limits": [
             {
@@ -3543,7 +3593,7 @@
               "sourceUrl": "https://kiro.dev/pricing/"
             }
           ],
-          "checked": "2026-10-30"
+          "checked": "2026-11-06"
         }
       ]
     },

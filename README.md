@@ -20,11 +20,11 @@ The data is maintained at **[getstackversus.com/limits](https://getstackversus.c
 | Lovable | Lovable | Free, Pro $25, Business $50, Enterprise (custom) | [lovable](https://getstackversus.com/limits/lovable) |
 | v0 | Vercel | Free, Plus $30, Business $100, Enterprise (custom) | [v0](https://getstackversus.com/limits/v0) |
 | Bolt | StackBlitz | Free, Lite $9, Pro $25, Teams $30, Enterprise (custom) | [bolt](https://getstackversus.com/limits/bolt) |
-| Kiro | Amazon Web Services | Free, Pro $20, Pro+ $40, Pro Max $100, Power $200, Enterprise (custom) | [kiro](https://getstackversus.com/limits/kiro) |
+| Kiro | Amazon Web Services | Free, Pro $20, Pro+ $40, Pro Max $100, Power $200, Teams (credit pooling) $20, Enterprise (custom) | [kiro](https://getstackversus.com/limits/kiro) |
 | Amp | Sourcegraph | Hobby free, Individual Megawatt $20, Education (Megawatt at 50% off) $10, Individual Gigawatt $200, Teams free, Enterprise (custom) | [amp](https://getstackversus.com/limits/amp) |
 | Augment Code | Augment | Standard $20, Business $100, Enterprise (custom) | [augment](https://getstackversus.com/limits/augment) |
 
-Data checked up to **2026-11-01**.
+Data checked up to **2026-11-06**.
 <!-- table:end -->
 
 ## Files
