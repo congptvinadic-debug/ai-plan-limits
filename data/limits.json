@@ -3078,7 +3078,7 @@
           "name": "Pro",
           "priceUsd": 25,
           "annualMonthlyUsd": 18,
-          "annualNote": "Pricing page: 'Save up to 28%' with no annual amount shown. $18/month derived from Help Center billing example 'Pro 10M annual plan ... for $216/year' (also 'Pro 26M annual plan at $540/year'). Human should confirm example figures are acceptable as a source.",
+          "annualNote": "Pricing page: 'Save up to 28%' with no annual amount shown. $18/month derived from Help Center billing example 'Pro 10M annual plan ... for $216/year' (also 'Pro 26M annual plan at $540/year').",
           "unit": "tokens",
           "priceNote": "Entry tier (10M tokens). Higher tiers chosen via a 'Monthly tokens' slider; Help Center examples cite Pro 50 at $50 (26M tokens) and Pro 100 at $100 (55M tokens). Plus applicable taxes.",
           "limits": [
